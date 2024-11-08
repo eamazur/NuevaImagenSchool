@@ -1,0 +1,21 @@
+@import url(./__image/card__image.css);
+@import url(./__content/card__content.css);
+@import url(./__title/card__title.css);
+@import url(./__price/card__price.css);
+
+.card-list__card {
+  display: grid;
+  background-color: var(--background-color-light);
+  border-radius: var(--radius-medium);
+}
+
+.card-big {
+  grid-column-end: span 2;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-inside-section-small);
+}
+
+.card-small {
+  grid-template-columns: 1fr;
+  gap: var(--gap-inside-section-small);
+}

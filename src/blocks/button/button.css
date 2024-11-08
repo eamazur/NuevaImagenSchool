@@ -2,6 +2,8 @@
   border-radius: var( --radius-small);
   border: none;
   padding: 12px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .button-primary {
@@ -22,4 +24,26 @@
 
 .button-language_is-active {
   background-color: var(--background-color-light);
+}
+
+.button-secondary {
+  background-color: var(--button-color-secondary);
+}
+
+.button-secondary:hover {
+  background-color: var(--button-color-secondary-hover);
+}
+
+.button-tertiary {
+  background-color: transparent;
+  border: solid 2px transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-inside-section-extra-small);
+
+}
+
+.button-tertiary:hover {
+  border-color: var(--button-color-primary);
 }

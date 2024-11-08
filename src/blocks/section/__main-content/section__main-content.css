@@ -1,0 +1,5 @@
+.section-why-us__main-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-inside-section-medium-small);
+}

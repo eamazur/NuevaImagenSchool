@@ -1,0 +1,10 @@
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-inside-section-medium-small);
+  padding: 
+    var(--gap-inside-section-medium)
+    var(--gap-inside-section-small)
+    var(--gap-inside-section-medium-small)
+    calc(var(--gap-inside-section-medium)-var(--gap-inside-section-small));
+}

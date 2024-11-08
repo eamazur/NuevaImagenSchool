@@ -1,0 +1,22 @@
+.section-home__chip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--background-color-light);
+  border-radius: var(--radius-medium);
+  padding: 8px 12px;
+  padding-inline-start: 40px;
+  position: relative;
+}
+
+.section-home__chip_no-shift {
+  padding-inline-start: 4px;
+  padding-block: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.section-home__chip_no-image {
+  padding: 8px 12px;
+}

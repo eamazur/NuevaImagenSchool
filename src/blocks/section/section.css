@@ -1,10 +1,29 @@
+@import url(./__headline/section__headline.css);
+@import url(./__text-content/section__text-content.css);
+@import url(./section-home__chips-container/section-home__chips-container.css);
+@import url(./section-home__chip/section-home__chip.css);
+@import url(./section-home__chip-image/section-home__chip-image.css);
+@import url(./__main-content/section__main-content.css);
+@import url(./__text/section__text.css);
+@import url(./__button-container/section__button-container.css);
+
 .section {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-inside-section);
+  gap: var(--gap-inside-section-medium);
   margin-inline: var(--page-side-margin);
 }
 
-.section_first {
+.section-home {
   margin-block-start: var(--margin-first-section);
 }
+/*
+.section-courses {
+  background-color: var(--background-color-light);
+}
+
+.section-form {
+  background-color: var(--background-color-light);
+}
+
+*/

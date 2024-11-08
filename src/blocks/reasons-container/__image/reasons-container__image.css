@@ -1,0 +1,6 @@
+.reasons-container__image {
+  border-radius: var(--radius-medium);
+  width: 40%;
+  object-fit: cover;
+  object-position: center;
+}

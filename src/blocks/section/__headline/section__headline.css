@@ -1,0 +1,11 @@
+.section__headline {
+  font-weight: 500;
+  font-size: var(--text-size-h2);
+  margin: 0;
+}
+
+.headline_page {
+  font-weight: 400;
+  font-size: var(--text-size-h1);
+  margin: 0;
+}

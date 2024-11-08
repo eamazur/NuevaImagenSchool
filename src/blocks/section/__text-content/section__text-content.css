@@ -1,0 +1,11 @@
+.section__text-content {
+  margin-inline: var(--margin-section-side);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-inside-section-small);
+}
+
+.section-why-us__text-content {
+  flex-direction: row;
+  gap: var(--gap-inside-section-large);
+}

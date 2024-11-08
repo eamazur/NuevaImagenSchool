@@ -1,0 +1,12 @@
+.section-home__chip-image {
+  position: absolute;
+  left: -15px;
+  top: -10px;
+  block-size: 46px;
+  inline-size: 46px;
+}
+
+.section-home__chip-image_no-shift {
+  position: static;
+
+}
