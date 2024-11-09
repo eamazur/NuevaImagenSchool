@@ -21,9 +21,10 @@
 .section-courses {
   background-color: var(--background-color-light);
 }
-
+*/
 .section-form {
-  background-color: var(--background-color-light);
+  /*background-color: var(--background-color-light);*/
+  flex-direction: row;
+  gap: calc(var(--gap-inside-section-medium)*2);
 }
 
-*/

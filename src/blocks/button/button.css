@@ -16,6 +16,10 @@
   background-color: var(--button-color-primary-hover);
 }
 
+.card-big .button-primary {
+  font-size: var(--text-size-large-medium);
+}
+
 .button-language {
   border: none;
   padding: 8px;

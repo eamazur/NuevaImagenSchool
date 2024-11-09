@@ -2,11 +2,14 @@ html {
   --text-color-main: #1E1E1E;
   --text-color-accent: #FF5151;
   --text-color-dark-bg: #F3F3F3;
+  --text-color-chip: #2C2C2C;
+  --text-color-form-placeholder: #ABC6D8;
   --button-color-primary: #333A5F;
   --button-color-primary-hover: #0D1127;
   --button-color-secondary: #E3E3E3;
   --button-color-secondary-hover: #CDCDCD;
   --background-color-light: #F7F9FB;
+  --background-color-input: #F5F8FA;
   --background-color-page: white;
   
 
@@ -35,4 +38,5 @@ html {
   --margin-section-side: 16px;
   
   --padding-large: 32px;
+  --padding-extra-small: 8px;
 }

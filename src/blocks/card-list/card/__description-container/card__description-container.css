@@ -1,0 +1,10 @@
+.card__description-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: var(--gap-inside-section-medium-small);
+  block-size: min-content;
+}
+
+.card-small .card__description-container {
+  grid-template-columns: auto;
+}

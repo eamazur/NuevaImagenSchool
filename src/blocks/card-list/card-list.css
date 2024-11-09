@@ -5,4 +5,5 @@
   grid-template-columns: 1fr 1fr;
   column-gap: var(--gap-inside-section-small);
   row-gap: var(--gap-inside-section-medium);
+
 }

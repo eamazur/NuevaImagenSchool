@@ -9,6 +9,7 @@
 @import url(../blocks/video-container/video-container.css);
 @import url(../blocks/reasons-container/reasons-container.css);
 @import url(../blocks/card-list/card-list.css);
+@import url(../blocks/form/form.css);
 
 .page {
   font-family: "Montserrat", sans-serif;

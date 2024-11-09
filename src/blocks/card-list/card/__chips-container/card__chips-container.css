@@ -1,0 +1,8 @@
+.card__chips-container {
+  position: absolute;
+  top: var(--gap-inside-section-medium-small);
+  left: var(--gap-inside-section-medium-small);
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-inside-section-small);
+}

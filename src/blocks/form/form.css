@@ -1,0 +1,13 @@
+@import url(./__label/form__label.css);
+@import url(./__input-container/form__input-container.css);
+@import url(./__text-input/form__text-input.css);
+
+.form {
+  background-color: var( --background-color-light);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-inside-section-medium-small);
+  padding: var(--gap-inside-section-medium-small) var(--gap-inside-section-large);
+  border-radius: var(--radius-medium);
+  width: 105%;
+}

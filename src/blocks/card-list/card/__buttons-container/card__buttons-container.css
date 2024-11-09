@@ -1,0 +1,12 @@
+.card__buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  margin-top: auto;
+  
+}
+
+.card-small .card__buttons-container {
+  justify-content: end;
+  gap: 18px;
+}

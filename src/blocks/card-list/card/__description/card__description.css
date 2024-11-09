@@ -1,0 +1,5 @@
+.card__description {
+  font-size: var(--text-size-regular);
+  line-height: 140%;
+  margin: 0;
+}
