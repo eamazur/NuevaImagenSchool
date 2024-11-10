@@ -10,11 +10,17 @@
 @import url(../blocks/reasons-container/reasons-container.css);
 @import url(../blocks/card-list/card-list.css);
 @import url(../blocks/form/form.css);
+@import url(../blocks/faq-container/faq-container.css);
+@import url(../blocks/contacts-container/contacts-container.css);
+@import url(../blocks/socials/socials.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/copyright/copyright.css);
 
 .page {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
+  line-height: 1.4;
   max-width: 1280px;
   margin: auto;
   color: var(--text-color-main);

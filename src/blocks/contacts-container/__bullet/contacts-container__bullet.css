@@ -1,0 +1,6 @@
+.contacts-container__bullet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-inside-section-extra-small);
+}

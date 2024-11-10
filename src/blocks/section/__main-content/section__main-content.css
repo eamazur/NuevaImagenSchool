@@ -4,3 +4,17 @@
   gap: var(--gap-inside-section-medium-small);
   width: 100%;
 }
+
+.section-faq__main-content {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-inside-section-large);
+}
+
+.section-contact__main-content {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-inside-section-large);
+  justify-content: space-between;
+  max-block-size: 275px;
+}

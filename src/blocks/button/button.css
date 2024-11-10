@@ -51,3 +51,7 @@
 .button-tertiary:hover {
   border-color: var(--button-color-primary);
 }
+
+.button-form {
+  min-inline-size: 112px;
+}

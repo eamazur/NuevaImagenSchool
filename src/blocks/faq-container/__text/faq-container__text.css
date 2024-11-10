@@ -1,0 +1,5 @@
+.faq-container__text {
+  margin: 0;
+  margin-block-start: -6px;
+  padding: 0px  var(--gap-inside-section-medium) var(--gap-inside-section-small) ;
+}

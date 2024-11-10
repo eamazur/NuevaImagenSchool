@@ -6,6 +6,7 @@
 @import url(./__main-content/section__main-content.css);
 @import url(./__text/section__text.css);
 @import url(./__button-container/section__button-container.css);
+@import url(./__map/section__map.css);
 
 .section {
   display: flex;
@@ -28,3 +29,11 @@
   gap: calc(var(--gap-inside-section-medium)*2);
 }
 
+.section-faq {
+  gap: calc(var(--gap-inside-section-medium)*2);
+}
+
+.section-contact {
+  gap: calc(var(--gap-inside-section-medium)*2);
+  
+}

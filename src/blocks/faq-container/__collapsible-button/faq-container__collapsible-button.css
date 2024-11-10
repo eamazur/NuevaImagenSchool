@@ -1,0 +1,37 @@
+.faq-container__collapsible-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    inline-size: 100%;
+    background-color: var(--background-color-light);
+    cursor: pointer;
+    padding: var(--gap-inside-section-small) var(--gap-inside-section-medium) ;
+    width: 100%;
+    border: none;
+    text-align: left;
+    border-top-right-radius: var( --radius-medium);
+    border-top-left-radius: var( --radius-medium);
+    border-bottom-right-radius: var( --radius-medium);
+    border-bottom-left-radius: var( --radius-medium);
+    font-weight: 600;
+    color: inherit;
+    transition: border-radius 0.2s;
+    transition-timing-function: step-end;
+}
+
+.active {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  transition-timing-function: step-start;
+}
+
+.faq-container__collapsible-button-icon {
+  rotate: z -90deg;
+  transition: 0.4s;
+}
+
+.active .faq-container__collapsible-button-icon {
+  transform: perspective(50px) rotateY(180deg);
+  transition: 0.4s;
+}

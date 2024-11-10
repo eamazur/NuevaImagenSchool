@@ -378,89 +378,124 @@
         <textarea class="form__text-input form__text-input_message" id="text" name="text" placeholder="What course would you prefer to choose"></textarea> 
       </div>
       <div class="form__input-container form__input-container_submit">
-        <button class="button button-primary">Submit</button>
+        <button class="button button-primary button-form">Submit</button>
         <div class="form__input-container form__input-container_checkbox">
           <input type="checkbox" class="form__text-input form__text-input_checkbox" name="" id="" checked>
-          <span class="form__text-input_checkbox-description">I agree with terms of <a href="" class="form__text-input_checkbox-link">Privacy Policy</a></span>  
+          <span class="form__text-input_checkbox-description">I agree with terms of <a href="" class="form__text-input_checkbox-link" target="_blank">Privacy Policy</a></span>  
         </div>
       </div>
     </form>
   </section>
 
-  <section class="section section__text-content">
-    <h2 class="section__headline" id="faq">Popular <span class="text-accent-font text-accent-color">Questions</span></h2>
-  
-    <div class="faq-container">
-      <div class="question-container">
-        <div class="always-visible">
-          <h3>Рассрочка?</h3>
-          <img src="<%=require('./images/shevron.svg')%>" alt="">
+  <section class="section section-faq">
+    <h2 class="section__headline section__headline_faq" id="faq">Popular <span class="text-accent-font text-accent-color">Questions</span></h2>
+    <div class="section-faq__main-content">
+      <div class="faq-container">
+        <div class="faq-container__question">
+          <button type="button" class="faq-container__collapsible-button">
+            What payment options are available?
+            <img class="faq-container__collapsible-button-icon" src="<%=require('./images/shevron.svg')%>" alt="">
+          </button>
+          <div class="faq-container__content">
+            <p class="faq-container__text">Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
+          </div>
         </div>
-        <div class="collapsible">
-          Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
+
+        <div class="faq-container__question">
+          <button type="button" class="faq-container__collapsible-button">
+            Is it possible to get a refund?
+            <img class="faq-container__collapsible-button-icon" src="<%=require('./images/shevron.svg')%>" alt="">
+          </button>
+          <div class="faq-container__content">
+            <p class="faq-container__text">Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
+          </div>
         </div>
+
+        <div class="faq-container__question">
+          <button type="button" class="faq-container__collapsible-button">
+            Who will my instructors be?
+            <img class="faq-container__collapsible-button-icon" src="<%=require('./images/shevron.svg')%>" alt="">
+          </button>
+          <div class="faq-container__content">
+            <p class="faq-container__text">Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
+          </div>
+        </div>
+
+        <div class="faq-container__question">
+          <button type="button" class="faq-container__collapsible-button">
+            Do you offer placement assistance?
+            <img class="faq-container__collapsible-button-icon" src="<%=require('./images/shevron.svg')%>" alt="">
+          </button>
+          <div class="faq-container__content">
+            <p class="faq-container__text">Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
+          </div>
+        </div>
+
+        <div class="faq-container__question">
+          <button type="button" class="faq-container__collapsible-button">
+            What is the free consultation about?
+            <img class="faq-container__collapsible-button-icon" src="<%=require('./images/shevron.svg')%>" alt="">
+          </button>
+          <div class="faq-container__content">
+            <p class="faq-container__text">Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
+          </div>
+        </div>
+
+        <div class="faq-container__question">
+          <button type="button" class="faq-container__collapsible-button">
+            What is the process like to enroll?
+            <img class="faq-container__collapsible-button-icon" src="<%=require('./images/shevron.svg')%>" alt="">
+          </button>
+          <div class="faq-container__content">
+            <p class="faq-container__text">Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
+          </div>
+        </div>     
       </div>
-      <div class="question-container">
-        <div class="always-visible">
-          <h3>Рассрочка?</h3>
-          <img src="<%=require('./images/shevron.svg')%>" alt="">
-        </div>
-        <div class="collapsible">
-          Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
-        </div>
-      </div>
-      <div class="question-container">
-        <div class="always-visible">
-          <h3>Рассрочка?</h3>
-          <img src="<%=require('./images/shevron.svg')%>" alt="">
-        </div>
-        <div class="collapsible">
-          Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
-        </div>
+
+      <div>
+        <h3>Any questions left?</h3>
+        <p>We can answer all of your questions during our free consultation</p>
+        <button class="button button-primary">Free consultation</button>
       </div>
     </div>
-    <div>
-      <h3>Any questions left?</h3>
-      <p>We can answer all of your questions during our free consultation</p>
-      <button class="button button-primary">Free consultation</button>
-    </div>
+    
   </section>
 
 
-  <section class="section">
+  <section class="section section-contact">
     <h2 class="section__headline" id="contacts"><span class="text-accent-font text-accent-color">Contact</span> us</h2>
-    <div>
-      <div>
-        <div>
-          <div>
-            <img src="" alt="">
-            <a href="">15210 e. 6th ave, unit 3
+    <div class="section-contact__main-content">
+      <div class="section__text-content section-contact__text-content">
+        <div class="contacts-container">
+          <div class="contacts-container__bullet">
+            <img class="contacts-container__icon" src="<%=require('./images/location-icon.svg')%>" alt="">
+            <a class="contacts-container__text" href="https://maps.app.goo.gl/x145imjrkZxAyahu6" target="_blank">15210 e. 6th ave, unit 3
               aurora co, 80011 </a>
           </div>
-          <div>
-            <img src="" alt="">
-            <a href="">720 373-0955</a>
+          <div class="contacts-container__bullet">
+            <img class="contacts-container__icon" src="<%=require('./images/phone-icon.svg')%>" alt="">
+            <a class="contacts-container__text" href="tel:+17203730955">720 373-0955</a>
           </div>
-          <div>
-            <img src="" alt="">
-            <p>Every day 9:00 AM - 5:00 PM</p>
+          <div class="contacts-container__bullet">
+            <img class="contacts-container__icon" src="<%=require('./images/clock-icon.svg')%>" alt="">
+            <p class="contacts-container__text">Every day 9:00 AM - 5:00 PM</p>
           </div>
-          <div>
-            <img src="" alt="">
-            <a href="">lauraesanchez@ymail.com</a>
+          <div class="contacts-container__bullet">
+            <img class="contacts-container__icon" src="<%=require('./images/mail-icon.svg')%>" alt="">
+            <a class="contacts-container__text" href="mailto:lauraesanchez@ymail.com" target="_blank">lauraesanchez@ymail.com</a>
           </div>
         </div>
-        <div>
-          <img src="" alt="">
-          <img src="" alt="">
+        <div class="socials">
+          <a href="https://www.instagram.com" class="socials__link" target="_blank"><img class="socials__icon" src="<%=require('./images/instagram-icon.svg')%>" alt="instagram link"></a>
+          <a href="https://www.facebook.com" class="socials__link" target="_blank"><img class="socials__icon" src="<%=require('./images/facebook-icon.svg')%>" alt="facebook link"></a>
         </div>
       </div>
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1AdS1s5nccahsSeOg8Mdi-zXLYNnmr_I&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+      <iframe class="section__map" src="https://www.google.com/maps/d/u/0/embed?mid=1AdS1s5nccahsSeOg8Mdi-zXLYNnmr_I&ehbc=2E312F&noprof=1"></iframe>
     </div>
   </section>
 
-  <footer>
-    <img src="<%=require('./images/logo.svg')%>" alt="" class="logo">
+  <footer class="footer">
+    <img src="<%=require('./images/logo-white.svg')%>" alt="" class="logo">
     <nav >
       <ul class="header__navigation">
         <li class="header__heading">
@@ -485,7 +520,7 @@
         </li>
       </ul>
     </nav>
-    <p>© 2023-<span>2024</span> Nueva Imagen Beauty School</p>
+    <p class="copyright">© 2023-<span id="currentYear"></span> Nueva Imagen Beauty School</p>
   </footer>
 </body>
 </html>

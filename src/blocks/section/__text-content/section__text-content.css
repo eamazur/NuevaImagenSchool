@@ -9,3 +9,12 @@
   flex-direction: row;
   gap: var(--gap-inside-section-large);
 }
+
+.section__text-content {
+  gap: var(--gap-inside-section-medium);
+}
+
+.section-contact__text-content {
+  margin-block: 14px;
+  line-height: 1.3;
+}

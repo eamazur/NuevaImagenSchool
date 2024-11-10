@@ -1,0 +1,8 @@
+.faq-container__content {
+  border-bottom-left-radius: var( --radius-medium);
+  border-bottom-right-radius: var( --radius-medium);
+  background-color: var(--background-color-light);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

@@ -1,0 +1,10 @@
+@import url(./__question/faq-container__question.css);
+@import url(./__collapsible-button/faq-container__collapsible-button.css);
+@import url(./__content/faq-container__content.css);
+@import url(./__text/faq-container__text.css);
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-inside-section-small);
+}

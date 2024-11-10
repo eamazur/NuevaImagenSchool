@@ -8,4 +8,9 @@
   font-weight: 400;
   font-size: var(--text-size-h1);
   margin: 0;
+  line-height: 1;
+}
+
+.section__headline_faq {
+  margin-inline: var(--margin-section-side);
 }
