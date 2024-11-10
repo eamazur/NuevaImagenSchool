@@ -32,7 +32,7 @@ html {
   --gap-inside-section-medium-small: 24px;
   --gap-inside-section-small: 16px;
   --gap-inside-section-extra-small: 8px;
-  --gap-chips: 64px;
+  --gap-chips: clamp(16px, 64px, 64px);
 
   --margin-first-section: -40px;
   --margin-section-side: 16px;

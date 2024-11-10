@@ -5,6 +5,7 @@
 @import url(./__submenu/header__submenu.css);
 @import url(./__phone/header__phone.css);
 @import url(./__time/header__time.css);
+@import url(./__nav-container/header__nav-container.css);
 
 .header {
   position: sticky;
@@ -15,6 +16,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
-  margin-inline: var(--page-side-margin)
+  padding: 16px 16px;
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+
 }

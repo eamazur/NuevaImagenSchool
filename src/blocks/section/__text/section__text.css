@@ -3,3 +3,7 @@
   margin: 0;
   line-height: 1.2;
 }
+
+.section-faq__text {
+  font-size: var(--text-size-regular);
+}

@@ -6,6 +6,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
   padding: calc(var(--gap-inside-section-small)*7) var(--gap-inside-section-small);
-  margin-inline: var(--page-side-margin)
 }

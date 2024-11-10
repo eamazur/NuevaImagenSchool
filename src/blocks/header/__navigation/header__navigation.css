@@ -1,7 +1,11 @@
 .header__navigation {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  justify-content: space-between;
+  /*gap: 20px;*/
   list-style: none;
   padding: 0;
+  width: 100%;
+  min-width: 330px;
+
 }

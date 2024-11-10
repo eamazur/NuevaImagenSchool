@@ -1,3 +1,5 @@
+@import url(./__icon/button-language__icon.css);
+
 .button {
   border-radius: var( --radius-small);
   border: none;
@@ -21,13 +23,25 @@
 }
 
 .button-language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
   border: none;
   padding: 8px;
   background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+.button-language:hover {
+  background-color: var(--background-color-light);
 }
 
 .button-language_is-active {
   background-color: var(--background-color-light);
+  cursor: default;
+  pointer-events: none;
 }
 
 .button-secondary {

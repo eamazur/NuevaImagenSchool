@@ -21,7 +21,7 @@
  
   <header class="header">
     <a href="#top" class="header__link"><img src="<%=require('./images/logo.svg')%>" class="logo" alt="Nueva Imagen Beauty School logo"></a>
-    <nav class="header__nav-container">
+    <nav >
       <ul class="header__navigation">
         <li class="header__heading">
           <a href="#why-us" class="header__link">Why us</a>
@@ -52,11 +52,11 @@
       </div>
       <button class="button button-primary">Free consultation</button>
       <div class="language-select">
-        <a class="button button-language" href="./index-esp.html">
+        <a class="button button-language button-language_is-active" href="./index-esp.html">
           <img src="<%=require('./images/spain-icon.svg')%>" class="button-language__icon" alt="Flag of Spain">
           <span class="button-language__text">Es</span>
         </a>
-        <a class="button button-language button-language_is-active" href="./index.html">
+        <a class="button button-language" href="./index.html">
           <img src="<%=require('./images/us-icon.svg')%>" class="button-language__icon" alt="Flag of the USA">
           <span class="button-language__text">En</span>
         </a>
@@ -67,10 +67,8 @@
   <section class="section section-home">
     <div class="section__text-content">
       <h1 class="section__headline headline_page" id="home"> 
-        Build your career in the Beauty Industry with
-        <span class="text-accent-font text-accent-color">Bilingual Education</span>
-        &
-        <span class="text-accent-font text-accent-color">Hands-On Training</span>
+        Construya su carrera en la industria de la belleza con
+        <span class="text-accent-font text-accent-color">Educación Bilingüe y Capacitación Práctica</span>
       </h1>
     
       <ul class="section-home__chips-container">
