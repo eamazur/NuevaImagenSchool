@@ -3,7 +3,7 @@
 @import url(./__text-input/form__text-input.css);
 
 .form {
-  background-color: var( --background-color-light);
+  background-color: var(--background-color-page);
   display: flex;
   flex-direction: column;
   gap: var(--gap-inside-section-medium-small);

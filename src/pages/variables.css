@@ -4,6 +4,7 @@ html {
   --text-color-dark-bg: #F3F3F3;
   --text-color-chip: #2C2C2C;
   --text-color-form-placeholder: #ABC6D8;
+  
   --button-color-primary: #333A5F;
   --button-color-primary-hover: #0D1127;
   --button-color-secondary: #E3E3E3;
@@ -11,6 +12,7 @@ html {
   --background-color-light: #F7F9FB;
   --background-color-input: #F5F8FA;
   --background-color-page: white;
+  --background-color-link-hover: #FFF3F3;
   
 
   --text-size-large: 32px;

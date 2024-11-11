@@ -26,7 +26,6 @@
   font-size: var(--text-size-regular);
   display: flex;
   flex-direction: column;
-  gap: var(--gap-between-sections);
 }
 
 .text-accent-font {

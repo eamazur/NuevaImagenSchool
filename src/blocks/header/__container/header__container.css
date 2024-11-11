@@ -1,0 +1,13 @@
+.header__container {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  background-color: var(--background-color-page);
+
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}

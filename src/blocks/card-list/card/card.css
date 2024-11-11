@@ -16,7 +16,7 @@
 .card-list__card {
   display: grid;
   position: relative;
-  background-color: var(--background-color-light);
+  background-color: var(--background-color-page);
   border-radius: var(--radius-medium);
 }
 
