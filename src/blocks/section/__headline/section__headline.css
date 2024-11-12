@@ -14,3 +14,11 @@
 .section__headline_faq {
   margin-inline: var(--margin-section-side);
 }
+
+.section-contact .section__headline {
+  margin-inline: var(--margin-section-side);
+}
+
+.section-courses .section__headline {
+  margin-inline: var(--margin-section-side);
+}

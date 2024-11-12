@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap-inside-section-medium-small);
-  padding: var(--gap-inside-section-medium-small) var(--gap-inside-section-large);
+  padding: var(--padding-medium) var(--padding-extra-large);
   border-radius: var(--radius-medium);
   width: 105%;
 }

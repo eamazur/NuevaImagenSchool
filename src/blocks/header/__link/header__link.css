@@ -2,13 +2,17 @@
   text-decoration: none;
   color: inherit;
   transition: 0.2s;
-  padding: 8px;
+  padding: var(--padding-extra-small);
   border-radius: var(--radius-small);
   text-wrap: nowrap;
 }
 
-.header__link:hover {
-  text-decoration: underline;
+.header__link:not(:has(.logo)):hover {
   background-color: var(--background-color-link-hover);
   color: var(--text-color-accent);
 }
+
+.header__link:has(.logo) {
+  padding: 0;
+}
+

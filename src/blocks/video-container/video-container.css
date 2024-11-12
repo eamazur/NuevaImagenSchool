@@ -2,7 +2,8 @@
 
 .video-container {
   inline-size: 100%;
-  block-size: 325px;
+  max-block-size: 325px;
+  aspect-ratio: 3.5;
   border-radius: var(--radius-medium);
   overflow: hidden;
   object-position: center;

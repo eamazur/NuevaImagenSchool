@@ -1,0 +1,169 @@
+@media (width <= 1024px) {
+  .header__submenu {
+    min-width: auto;
+    width: auto;
+    gap: var(--gap-inside-section-small)
+  }
+
+  .header__nav-container {
+    width: auto;
+  }
+  .button-phone {
+    display: block;
+  }
+
+  .header__phone, .header__time {
+    display: none;
+  }
+
+  .header__submenu > .button-primary {
+    display: none;
+  }
+
+  .card__buttons-description {
+    display: none;
+  }
+
+  .card-big .button-primary {
+    font-size: inherit;
+    
+  }
+
+  .card-big .card__button-primary-container {
+    inline-size: auto;
+  } 
+
+  .card-big .card__buttons-container {
+    gap: 18px;
+  }
+
+  .card-big .card__chips-container {
+    width: 45%;
+  }
+
+  .section-form .section__container {
+    gap: 0;
+  }
+
+  .form {
+    padding:var(--padding-medium);
+  }
+}
+
+@media (width <= 768px) {
+  .logo {
+    height: 45px; 
+  }
+  
+  .header__nav-container, .footer__nav-container {
+    display: none;
+  }
+  /* TODO inactive button looks line it is not a button
+  .button-language:not(.button-language_is-active) {
+    border: solid 2px var(--button-color-primary);
+  }
+  */
+  .section-home .section__container {
+    margin-top: -60px;
+  }
+  
+  .section {
+    padding-top: 80px;
+  }
+
+  .video-container {
+    aspect-ratio: 2;
+  }
+  
+  .section-why-us__text-content {
+    flex-direction: column;
+  }
+
+  .reasons-container {
+    flex-direction: column;
+  }
+
+  /*TODO the following rule does not work in dev mode*/
+
+  .reasons-container:first-of-type {
+    flex-direction: column-reverse;
+  }
+
+  .reasons-container__image {
+    width: 100%;
+    aspect-ratio: 2;
+  }
+
+  .reasons-container__icon {
+    right: 0;
+  }
+/*
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+*/
+  .card-big {
+    grid-template-columns: 1fr;
+    gap: var(--gap-inside-section-small);
+    grid-auto-rows: min-content 1fr;
+    grid-column-end: 1;
+  }
+
+  .card-big .card__description-container {
+    grid-template-columns: auto;
+  }
+
+  .card-big .card__bullet-list {
+    grid-row-start: 1;
+  }
+
+  .card-big .card__chips-container {
+    width: 80%;
+  }
+
+  
+
+  
+
+  .section-form .section__container {
+    flex-direction: column;
+    gap: calc(var(--gap-inside-section-medium)*2);
+  }
+
+  .form {
+    width: 100%;
+    padding: var(--padding-medium) var(--padding-extra-large);
+  }
+
+  .section-faq__main-content {
+    flex-direction: column;
+  }
+
+  .section-faq__aside {
+    padding: var(--padding-small) var(--padding-large);
+  }
+
+  .faq-container__text {
+    padding-top: var(--padding-small);
+  }
+
+  .section-contact__main-content {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .section__map {
+    width: 100%;
+    aspect-ratio: 2;
+  }
+
+  .button-tertiary {
+    border-color: var(--button-color-primary);
+  }
+}
+
+@media (width <= 375px) {
+  .button-language__text {
+    display: none;
+  }
+}

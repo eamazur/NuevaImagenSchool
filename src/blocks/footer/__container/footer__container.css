@@ -9,5 +9,5 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: calc(var(--gap-inside-section-small)*7) var(--gap-inside-section-small);
+  padding: calc(var(--padding-small)*7) var(--padding-small);
 }

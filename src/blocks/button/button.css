@@ -1,9 +1,9 @@
-@import url(./__icon/button-language__icon.css);
+@import url(./__icon/button__icon.css);
 
 .button {
   border-radius: var( --radius-small);
   border: none;
-  padding: 12px;
+  padding: var(--padding-button);
   cursor: pointer;
   transition: 0.2s;
 }
@@ -11,6 +11,7 @@
 .button-primary {
   background-color: var(--button-color-primary);
   color: var(--text-color-dark-bg);
+  text-decoration: none;
 
 }
 
@@ -35,7 +36,9 @@
 }
 
 .button-language:hover {
-  background-color: var(--background-color-light);
+ /* background-color: var(--background-color-light);*/
+  background-color: var(--background-color-link-hover);
+  color: var(--text-color-accent);
 }
 
 .button-language_is-active {
@@ -68,4 +71,8 @@
 
 .button-form {
   min-inline-size: 112px;
+}
+
+.button-phone {
+  display: none;
 }

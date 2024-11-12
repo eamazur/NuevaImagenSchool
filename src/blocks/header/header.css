@@ -9,15 +9,13 @@
 @import url(./__container/header__container.css);
 
 .header {
-  position: sticky;
-  top: 0;
   background-color: var(--background-color-page);
   z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 16px;
+  padding: var(--padding-small);
   width: 100%;
   margin: auto;
 }
