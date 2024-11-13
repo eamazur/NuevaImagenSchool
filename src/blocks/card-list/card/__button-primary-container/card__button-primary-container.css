@@ -3,7 +3,6 @@
   flex-direction: row;
   align-items: center;
   gap: var(--gap-inside-section-extra-small);
-  inline-size: 75%;
 }
 
 .card-small .card__button-primary-container {

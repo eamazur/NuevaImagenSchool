@@ -14,19 +14,23 @@
 .section {
   width: 100%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: var(--gap-between-sections);
+}
+
+.section-home {
+  padding-top: calc(0.6*var(--gap-between-sections)) ;
 }
 
 .section-courses {
   background-color: var(--background-color-light);
-  margin-top: 100px;
+  margin-top: var(--gap-between-sections);
 }
 
 .section-form {
   background-color: var(--background-color-light);
-  padding-bottom: 100px;
+  padding-bottom: var(--gap-between-sections);
 }
 
 .section-contact {
-  margin-bottom: 100px;
+  margin-bottom: var(--gap-between-sections);
 }

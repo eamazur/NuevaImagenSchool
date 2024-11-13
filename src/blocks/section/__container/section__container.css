@@ -6,10 +6,6 @@
   margin: auto;
   padding-inline: var(--page-side-margin);
 }
-
-.section-home .section__container {
-  margin-block-start: var(--margin-first-section);
-}
 /*
 .section-courses {
   background-color: var(--background-color-light);

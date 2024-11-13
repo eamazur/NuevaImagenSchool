@@ -1,5 +1,6 @@
 html {
-  --text-color-main: #1E1E1E;
+  --text-color-main: #292C3F;
+  /*between button and text is #292C3F*/
   --text-color-accent: #FF5151;
   --text-color-dark-bg: #F3F3F3;
   --text-color-chip: #2C2C2C;
@@ -13,6 +14,8 @@ html {
   --background-color-input: #F5F8FA;
   --background-color-page: white;
   --background-color-link-hover: #FFF3F3;
+
+  --line-height-page: 1.4;
   
   /*
   text sizes created using https://clamp.font-size.app/
@@ -36,14 +39,13 @@ html {
   */
 
   --page-side-margin: 0px;
-  --gap-between-sections: 100px;
-  --gap-inside-section-large: 48px;
-  --gap-inside-section-large-medium: 42px;
-  --gap-inside-section-medium: 32px;
-  --gap-inside-section-medium-small: 24px;
-  --gap-inside-section-small: 16px;
-  --gap-inside-section-extra-small: 8px;
-  --gap-chips: clamp(16px, 64px, 64px);
+  --gap-between-sections: clamp(3.125rem, 2.0833rem + 5.2083vw, 6.25rem); /*from 50 to 100*/
+  --gap-inside-section-large: clamp(1.5rem, 1.0000rem + 2.5000vw, 3rem); /*from 24 to 48*/
+  --gap-inside-section-large-medium: clamp(1.25rem, 0.7917rem + 2.2917vw, 2.625rem);  /*from 20 to 42*/
+  --gap-inside-section-medium: clamp(1rem, 0.6667rem + 1.6667vw, 2rem);  /*from 16 to 32*/
+  --gap-inside-section-medium-small: clamp(0.75rem, 0.5000rem + 1.2500vw, 1.5rem);  /*from 12 to 24*/
+  --gap-inside-section-small: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem); /*from 8 to 16*/
+  --gap-inside-section-extra-small: clamp(0.25rem, 0.1667rem + 0.4167vw, 0.5rem);  /*from 4 to 8*/
 
   --margin-first-section: -40px;
   --margin-section-side: clamp(1rem, 0.6667rem + 1.6667vw, 2rem);       /*from 16 to 32*/

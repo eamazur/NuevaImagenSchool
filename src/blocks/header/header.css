@@ -17,5 +17,6 @@
   align-items: center;
   padding: var(--padding-small);
   width: 100%;
+  max-width: 1280px;
   margin: auto;
 }
