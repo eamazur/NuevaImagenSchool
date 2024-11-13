@@ -9,7 +9,7 @@ html{--text-color-main:#292c3f;--text-color-accent:#ff5151;--text-color-dark-bg:
 .header__phone{color:inherit;font-weight:500;text-decoration:none;transition:.2s}.header__phone:hover{color:var(--text-color-accent)}
 .header__time{font-size:var(--text-size-small);margin:0}
 .header__nav-container{width:40%}
-.header__container{align-items:center;background-color:var(--background-color-page);display:flex;flex-direction:row;justify-content:space-between;margin:auto;position:sticky;top:0;transition:.5s;width:100%;z-index:1}.nav-up{top:-100%}
+.header__container{align-items:center;background-color:var(--background-color-page);display:flex;flex-direction:row;justify-content:space-between;margin:auto;position:sticky;top:0;transition:.5s;width:100%;z-index:1}.nav-up{top:-90px}
 .header{align-items:center;background-color:var(--background-color-page);display:flex;flex-direction:row;justify-content:space-between;margin:auto;max-width:1280px;padding:var(--padding-small);width:100%;z-index:1}
 .logo{block-size:56px;display:block;-o-object-fit:contain;object-fit:contain;-o-object-position:0;object-position:0}
 .button-language__icon{block-size:12px;inline-size:18px}.button-phone__icon{height:20px;-o-object-fit:contain;object-fit:contain;-o-object-position:0;object-position:0;width:20px}
