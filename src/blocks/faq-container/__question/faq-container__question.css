@@ -1,6 +1,0 @@
-.faq-container__question {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  inline-size: 100%;
-}

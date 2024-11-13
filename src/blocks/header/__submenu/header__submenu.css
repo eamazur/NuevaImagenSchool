@@ -1,8 +1,0 @@
-.header__submenu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 36%;
-  min-width: 430px;
-}

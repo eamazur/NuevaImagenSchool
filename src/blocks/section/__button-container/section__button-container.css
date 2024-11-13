@@ -1,5 +1,0 @@
-.section__button-container {
-  display: flex;
-  flex-direction: row;
-  gap: var(--gap-inside-section-small);
-}
