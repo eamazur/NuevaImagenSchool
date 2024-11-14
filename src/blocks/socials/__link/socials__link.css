@@ -1,3 +1,4 @@
 .socials__link {
-  block-size: 40px;
+  text-decoration: none;
+  color: inherit;
 }

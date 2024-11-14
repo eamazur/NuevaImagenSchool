@@ -1,0 +1,24 @@
+.review__text-content {
+  overflow: auto;
+
+
+  
+}
+
+.review__text-content::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #EDEEF0;
+}
+
+.review__text-content::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: transparent;
+}
+
+.review__text-content::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: var(--button-color-secondary-hover);
+}

@@ -1,0 +1,11 @@
+@import url(./__pagination/reviews-container__pagination.css);
+@import url(./__button/reviews-container__button.css);
+@import url(./__button-icon/reviews-container__button-icon.css);
+@import url(./__reviews-list/reviews-container__reviews-list.css);
+@import url(./__page-number/reviews-container__page-number.css);
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-inside-section-small);
+}

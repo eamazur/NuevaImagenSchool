@@ -1,0 +1,5 @@
+.review__caption {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-inside-section-extra-small)
+}

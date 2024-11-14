@@ -1,0 +1,23 @@
+.reviews-container__button {
+  border: none;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 48px;
+  padding: 0;
+  background-color: var(--background-color-light);
+  cursor: pointer;
+}
+
+.reviews-container__button:hover {
+  background-color: var(--button-color-secondary-hover);
+}
+
+.reviews-container__button.inactive {
+  pointer-events: none;
+  cursor: default;
+  
+}
+
+.reviews-container__button.inactive:hover {
+  background-color: var(--background-color-light);
+}

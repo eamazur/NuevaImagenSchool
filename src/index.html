@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -265,63 +265,92 @@
         </div>
       </section>
 
-      <!--
-   <section class="section"  id="reviews">
-    <h2 class="section__headline">See why <span class="text-accent-font text-accent-color">People</span> like you <span class="text-accent-font text-accent-color">Choose Us</span></h2>
-    <div>
-      <a href=""><img src="" alt=""></a>
-      <a href=""><img src="" alt=""></a>
-      <a href="">@NuevaImagenBeautySchool</a>
-    </div>
-    <div class="reviews-container">
-      <div class="review">
-        <p>“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”</p>
-        <div>
-          <img src="" alt="">
-          <div>
-            <p>Gabriel, barber</p>
-            <p>@barbergabrielaurora</p>
+      
+      <section class="section"  id="reviews">
+        <div class="section__container">
+          <div class="section__text-content section-reviews__text-content">
+            <h2 class="section__headline">See why <span class="text-accent-font text-accent-color">People</span> like you <span class="text-accent-font text-accent-color">Choose Us</span></h2>
+          
+            <div class="socials">
+              <a
+                href="https://www.instagram.com"
+                class="socials__link"
+                target="_blank"
+                ><img
+                  class="socials__icon"
+                  src="<%=require('./images/instagram-icon.svg')%>"
+                  alt="instagram link"
+              /></a>
+              <a
+                href="https://www.facebook.com"
+                class="socials__link"
+                target="_blank"
+                ><img
+                  class="socials__icon"
+                  src="<%=require('./images/facebook-icon.svg')%>"
+                  alt="facebook link"
+              /></a>
+              <a class="socials__link" href="">@NuevaImagenBeautySchool</a>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="review">
-        <p>“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”</p>
-        <div>
-          <img src="" alt="">
-          <div>
-            <p>Gabriel, barber</p>
-            <p>@barbergabrielaurora</p>
-          </div>
-        </div>
-      </div>
-      <div class="review">
-        <div>
-          <video src=""></video>
-        </div>
-        <p></p>
-      </div>
-      <div class="review">
-        <img src="" alt="">
-        <p></p>
-      </div>
-      <div class="review">
-        <p>“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”</p>
-        <div>
-          <div>
-            <p>Gabriel, barber</p>
-            <p>@barbergabrielaurora</p>
-          </div>
-        </div>
-      </div>
-      <div>
-          <button><img src="<%=require('./images/shevron.svg')%>" alt=""></button>
-          <p><span>1</span>/3</p>
-          <button><img src="<%=require('./images/shevron.svg')%>" alt=""></button>
-      </div>
-    </div>
-  </section>
+  
+          <div class="reviews-container">
+            <ul class="reviews-container__reviews-list">
+             
+              <li class="review review-text">
+                <p class="review__text-content">“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”</p>
+                <div class="review__caption-container">
+                  <img class="review__avatar" src="<%=require('./images/IMG_5802.webp')%>" alt="student avatar">
+                  <div class="review__caption">
+                    <p class="review__author-name">Gabriel, barber</p>
+                    <p class="review__author-tag">@barbergabrielaurora</p>
+                  </div>
+                </div>
+              </li>
 
-  -->
+              <li class="review review-video">
+                <div class="review__video-container">
+                  <video class="review__video" src="<%=require('./images/IMG_5485.mp4')%>" controls></video>
+                </div>
+                <div class="review__caption">
+                  <p class="review__author-name">Anna, @barberannaurora</p>
+                </div>
+              </li>
+
+              <li class="review review-photo">
+                <img class="review-photo__image" src="<%=require('./images/IMG_5802.webp')%>" alt="student avatar">
+                <div class="review__caption">
+                  <p class="review__author-name">Anna, @barberannaurora</p>
+                </div>
+              </li>
+
+              <li class="review  review-text">
+                <p class="review__text-content">“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”</p>
+                <div>
+                  <div class="review__caption">
+                    <p class="review__author-name">Gabriel, barber</p>
+                    <p class="review__author-tag">@barbergabrielaurora</p>
+                  </div>
+                </div>
+              </li>
+            
+            </ul>
+            
+            <div class="reviews-container__pagination">
+                <button class="reviews-container__button button-backward inactive"><img class="reviews-container__button-icon" src="<%=require('./images/shevron.svg')%>" alt=""></button>
+                <p class="reviews-container__page-display">
+                  <span class="reviews-container__page-number page-number-inactive" id="current-page">1</span>
+                  /
+                  <span class="reviews-container__page-number" id="page-count">3</span>
+                </p>
+                <button class="reviews-container__button button-forward"><img class="reviews-container__button-icon" src="<%=require('./images/shevron.svg')%>" alt=""></button>
+            </div>
+          </div>
+        </div>
+       
+      </section>
+
+
 
       <section class="section section-courses" id="courses">
         <div class="section__container">
@@ -535,7 +564,7 @@
         </div>
       </section>
 
-      <section class="section section-form" id="form">
+      <section class="section section-form" id="section-form">
         <div class="section__container">
           <div class="section__text-content section-form__text-content">
             <h2 class="section__headline">
@@ -856,6 +885,40 @@
         </p>
       </div>
     </footer>
+
+    <template id="review-text-template">
+      <li class="review review-text">
+        <p class="review__text-content">“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”</p>
+        <div class="review__caption-container">
+          <img class="review__avatar" src="<%=require('./images/IMG_5802.webp')%>" alt="student avatar">
+          <div class="review__caption">
+            <p class="review__author-name">Gabriel, barber</p>
+            <p class="review__author-tag">@barbergabrielaurora</p>
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <template id="review-video-template">
+      <li class="review review-video">
+        <div class="review__video-container">
+          <video class="review__video" src="<%=require('./images/IMG_5485.mp4')%>" controls></video>
+        </div>
+        <div class="review__caption">
+          <p class="review__author-name">Anna, @barberannaurora</p>
+        </div>
+      </li>
+    </template>
+
+    <template id="review-photo-template">
+      <li class="review review-photo">
+        <img class="review-photo__image" src="<%=require('./images/IMG_5802.webp')%>" alt="student avatar">
+        <div class="review__caption">
+          <p class="review__author-name">Anna, @barberannaurora</p>
+        </div>
+      </li>
+    </template>
+
   </body>
 
 </html>

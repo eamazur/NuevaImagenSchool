@@ -1,0 +1,33 @@
+@import url(./__avatar/review__avatar.css);
+@import url(./__caption-container/review__caption-container.css);
+@import url(./__caption/review__caption.css);
+@import url(./__video-container/review__video-container.css);
+@import url(./__video/review__video);
+@import url(./__image/review-photo__image.css);
+@import url(./text-content/review__text-content.css);
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 380px;
+  justify-content: space-between;
+}
+
+.review-text {
+  background-color: var(--background-color-light);
+  border-radius: var(--radius-medium);
+  padding: var(--padding-small) var(--padding-large);
+  height: fit-content;
+  max-height: 100%;
+  
+}
+
+.review-video {
+  height: 100%;
+
+}
+
+.review-photo {
+ 
+}

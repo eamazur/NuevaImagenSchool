@@ -1,0 +1,14 @@
+.reviews-container__button-icon {
+  margin: auto;
+  width: 24px;
+  aspect-ratio: 1;
+}
+
+.button-forward .reviews-container__button-icon {
+  rotate: 180deg;
+}
+
+.reviews-container__button.inactive .reviews-container__button-icon {
+  opacity: 0.4;
+}
+

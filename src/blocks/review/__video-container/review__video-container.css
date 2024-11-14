@@ -1,0 +1,7 @@
+.review__video-container {
+  border-radius: var(--radius-medium);
+  
+  object-position: center;
+  overflow: hidden;
+  height: 100%;
+}

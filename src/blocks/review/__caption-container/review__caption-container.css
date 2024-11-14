@@ -1,0 +1,7 @@
+.review__caption-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-inside-section-extra-small);
+    word-break: break-word;
+    align-items: center;
+}

@@ -1,0 +1,7 @@
+.review-photo__image {
+  border-radius: var(--radius-medium);
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100%;
+}

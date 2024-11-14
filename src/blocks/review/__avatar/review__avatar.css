@@ -1,0 +1,12 @@
+.review__avatar {
+  aspect-ratio: 1;
+  width: 48px;
+  border-radius: 50%;
+  object-fit: fill;
+  object-position: center;
+  height: fit-content; 
+}
+
+.avatar-hidden {
+  display: none;
+}

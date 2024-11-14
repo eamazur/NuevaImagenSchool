@@ -18,3 +18,13 @@
   margin-block: 14px;
   line-height: 1.3;
 }
+
+.section-reviews__text-content {
+  flex-direction: row;
+  max-width: 1010px;
+  gap: var(--gap-inside-section-large);
+}
+
+.section-reviews__text-content .section__headline {
+  max-width: 46%;
+}
