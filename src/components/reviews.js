@@ -20,7 +20,7 @@ const reviewTextTemplate  = document.querySelector('#review-text-template').cont
 const reviewPhotoTemplate = document.querySelector('#review-photo-template').content;
 const reviewVideoTemplate = document.querySelector('#review-video-template').content;
 
-const reviewsPerPage = 4;
+let reviewsPerPage = 4;
 
 let currentPage = 1;
 let pageCount;
@@ -77,6 +77,25 @@ const reviews = [
   },
  
 ];
+/*
+//set number of reviews per page based on window width
+function updateReviewsPerPage() {
+  if (window.innerWidth <= 768 && reviewsPerPage != 2) {
+    reviewsPerPage = 2;
+    console.log('reviews per page 2');
+  } else {
+    if (reviewsPerPage !=4) {
+      reviewsPerPage = 4;
+      console.log('reviews per page 4');
+    }
+  }
+  
+  
+}
+
+window.addEventListener("resize", updateReviewsPerPage);
+window.addEventListener("onload", updateReviewsPerPage);
+*/
 
 function calculatePageCount(reviewsArr) {
   pageCount = Math.ceil(reviewsArr.length / reviewsPerPage);
@@ -186,6 +205,7 @@ function loadReviews(pageNumber) {
 
 document.addEventListener('DOMContentLoaded', function() {
   pageCount = calculatePageCount(reviews);
+  console.log('pageCount ' + pageCount);
   pageCountDisplay.textContent = pageCount;
   loadReviews(currentPage);
 });
