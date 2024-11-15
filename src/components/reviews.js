@@ -9,64 +9,93 @@ const forwardButton = document.querySelector('.button-forward');
 const backwardButton = document.querySelector('.button-backward');
 const pageCountDisplay = document.querySelector('#page-count');
 const currentPageDisplay = document.querySelector('#current-page');
+const pageLanguage = document.documentElement.lang;
 
 const reviewTextTemplate  = document.querySelector('#review-text-template').content;
 const reviewPhotoTemplate = document.querySelector('#review-photo-template').content;
 const reviewVideoTemplate = document.querySelector('#review-video-template').content;
+
 
 let reviewsPerPage = 4;
 
 let currentPage = 1;
 let pageCount;
 
+/**
+ * This is our review "datebase". 
+ * Each review has several attributes:
+ *  type (required): can be 'text', 'photo' or 'video' - this changes which template will be used during rendering
+ *  contentEn (required): depending on review type is either a string or a variable
+ *                        leading to a photo or video file (see top of file for how to import)
+ *  contentEs (required): same as contentEn, but will be displayed in the Spanish version of the website,
+ *                        if the two versions are identical, simply copy the value of contentEn
+ *  avatar (optional, applicable only to text type): a variable leading to a photo file (see top of file for how to import)
+ *                                                   if it is specified in a text review, then an avatar will be rendered in the caption
+ *  nameEn (required): a string with the name of the author
+ *  nameEs (required): same as nameEn, but will be displayed in the Spanish version of the website,
+ *                     if the two versions are identical, simply copy the value of nameEn
+ *  tag (required): a string with the tag of the author
+ *                  note that it is rendered as simple text and not a link
+ * */
+
 const reviews = [
   {
     type: 'text',
-    content: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
+    contentEn: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
+    contentEs: 'test spanish review',
     avatar: avatarReview1,
-    name: 'Gabriel, barber',
+    nameEn: 'Gabriel, barber',
+    nameEs: 'Gabriel, barber',
     tag: '@barbergabrielaurora',
   },
   {
     type: 'video',
-    content: videoReview2,
-    avatar: undefined,
-    name: 'Anna',
+    contentEn: videoReview2,
+    contentEs: videoReview2,
+    nameEn: 'Anna',
+    nameEs: 'Maria',
     tag: '@barberannaurora',
   },
   {
     type: 'photo',
-    content: photoReview3,
-    avatar: undefined,
-    name: 'Anna',
+    contentEn: photoReview3,
+    contentEs: photoReview3,
+    nameEn: 'Anna',
+    nameEs: 'Maria',
     tag: '@barberannaurora',
   },
   {
     type: 'text',
-    content: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
+    contentEn: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
+    contentEs: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
     avatar: undefined,
-    name: 'Gabriel, barber',
+    nameEn: 'Gabriel, barber',
+    nameEs: 'Gabriel, barber',
     tag: '@barbergabrielaurora',
   },
   {
     type: 'photo',
-    content: photoReview3,
-    avatar: undefined,
-    name: 'Anna',
+    contentEn: photoReview3,
+    contentEs: photoReview3,
+    nameEn: 'Anna',
+    nameEs: 'Maria',
     tag: '@barberannaurora',
   },
   {
     type: 'text',
-    content: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
+    contentEn: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
+    contentEs: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
     avatar: avatarReview1,
-    name: 'Gabriel, barber',
+    nameEn: 'Gabriel, barber',
+    nameEs: 'Gabriel, barber',
     tag: '@barbergabrielaurora',
   },
   {
     type: 'video',
-    content: videoReview2,
-    avatar: undefined,
-    name: 'Anna',
+    contentEn: videoReview2,
+    contentEs: videoReview2,
+    nameEn: 'Anna',
+    nameEs: 'Maria',
     tag: '@barberannaurora',
   },
  
@@ -99,7 +128,8 @@ function checkPageLimits(pageNumber) {
   }
 };
 
-function renderReview(reviewObj) {
+function renderReviewEn(reviewObj) {
+
   let reviewElement;
   let avatarPresent;
   if (reviewObj.type == 'text') {
@@ -107,7 +137,7 @@ function renderReview(reviewObj) {
     //fill text review
     reviewElement = reviewTextTemplate.querySelector('.review-text').cloneNode(true);
 
-    reviewElement.querySelector('.review__text-content').textContent = reviewObj.content;
+    reviewElement.querySelector('.review__text-content').textContent = reviewObj.contentEn;
     
     if(!reviewObj.avatar) {
       avatarPresent = false;
@@ -117,7 +147,7 @@ function renderReview(reviewObj) {
       avatarPresent = true;
       console.log('avatar found, ' + avatarPresent);
     }
-    reviewElement.querySelector('.review__author-name').textContent = reviewObj.name;
+    reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn;
     reviewElement.querySelector('.review__author-tag').textContent = reviewObj.tag;
 
     //render review
@@ -128,8 +158,8 @@ function renderReview(reviewObj) {
     if (reviewObj.type == 'photo') {
       console.log('type photo');
       reviewElement = reviewPhotoTemplate.querySelector('.review-photo').cloneNode(true);
-      reviewElement.querySelector('.review-photo__image').src = reviewObj.content;
-      reviewElement.querySelector('.review__author-name').textContent = reviewObj.name + ', ' + reviewObj.tag;
+      reviewElement.querySelector('.review-photo__image').src = reviewObj.contentEn;
+      reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn + ', ' + reviewObj.tag;
 
       //render review
       reviewsList.append(reviewElement);
@@ -138,8 +168,62 @@ function renderReview(reviewObj) {
         console.log('type video');
         //fill video review
         reviewElement = reviewVideoTemplate.querySelector('.review-video').cloneNode(true);
-        reviewElement.querySelector('.review__video').src = reviewObj.content;
-        reviewElement.querySelector('.review__author-name').textContent = reviewObj.name + ', ' + reviewObj.tag;
+        reviewElement.querySelector('.review__video').src = reviewObj.contentEn;
+        reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn + ', ' + reviewObj.tag;
+
+        //render review
+        reviewsList.append(reviewElement);
+      } else {
+        console.log('review undefined, will not render');
+      }
+    }
+    
+  }
+  
+};
+
+function renderReviewEs(reviewObj) {
+
+  let reviewElement;
+  let avatarPresent;
+  if (reviewObj.type == 'text') {
+    console.log('type text');
+    //fill text review
+    reviewElement = reviewTextTemplate.querySelector('.review-text').cloneNode(true);
+
+    reviewElement.querySelector('.review__text-content').textContent = reviewObj.contentEs;
+    
+    if(!reviewObj.avatar) {
+      avatarPresent = false;
+      reviewElement.querySelector('.review__avatar').classList.add('avatar-hidden');
+    } else {
+      reviewElement.querySelector('.review__avatar').src = reviewObj.avatar;
+      avatarPresent = true;
+      console.log('avatar found, ' + avatarPresent);
+    }
+    reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEs;
+    reviewElement.querySelector('.review__author-tag').textContent = reviewObj.tag;
+
+    //render review
+    reviewsList.append(reviewElement);
+
+  } else {
+    //fill photo review
+    if (reviewObj.type == 'photo') {
+      console.log('type photo');
+      reviewElement = reviewPhotoTemplate.querySelector('.review-photo').cloneNode(true);
+      reviewElement.querySelector('.review-photo__image').src = reviewObj.contentEs;
+      reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEs + ', ' + reviewObj.tag;
+
+      //render review
+      reviewsList.append(reviewElement);
+    } else { 
+      if (reviewObj.type == 'video') {
+        console.log('type video');
+        //fill video review
+        reviewElement = reviewVideoTemplate.querySelector('.review-video').cloneNode(true);
+        reviewElement.querySelector('.review__video').src = reviewObj.contentEs;
+        reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEs + ', ' + reviewObj.tag;
 
         //render review
         reviewsList.append(reviewElement);
@@ -171,10 +255,18 @@ function loadReviews(pageNumber) {
   
   for (let i= firstReview; i < firstReview + reviewsPerPage; i++) {
     console.log('loading '+ i +' review');
-    if (reviews[i-1]) {
-      
-      renderReview(reviews[i-1]);
-    };
+    if (pageLanguage == 'en') {
+      if (reviews[i-1]) {
+        //render English content
+        renderReviewEn(reviews[i-1]);
+      };
+    } else {
+      if (reviews[i-1]) {
+        //render Spenish content
+        renderReviewEs(reviews[i-1]);
+      };
+    }
+    
   };
 };
 
