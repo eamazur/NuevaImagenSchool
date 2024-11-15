@@ -1,4 +1,4 @@
 .contacts-container__icon {
-  block-size: 20px;
-  inline-size: 20px;
+  height: 20px;
+  width: 20px;
 }

@@ -2,7 +2,7 @@
   border-radius: var(--radius-medium);
   object-fit: cover;
   object-position: center 30%;
-  inline-size: 100%;
+  width: 100%;
 }
 
 .card-big__image {

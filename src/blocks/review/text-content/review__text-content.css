@@ -1,8 +1,6 @@
 .review__text-content {
   overflow: auto;
-
-
-  
+	line-height: 1.4;
 }
 
 .review__text-content::-webkit-scrollbar-track

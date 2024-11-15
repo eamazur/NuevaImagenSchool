@@ -3,5 +3,5 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  block-size: min-content;
+  height: min-content;
 }

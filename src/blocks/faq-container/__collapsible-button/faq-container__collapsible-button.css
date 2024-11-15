@@ -3,11 +3,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    inline-size: 100%;
+    width: 100%;
     background-color: var(--background-color-light);
     cursor: pointer;
     padding: var(--padding-small) var(--padding-large) ;
-    width: 100%;
     border: none;
     text-align: left;
     border-top-right-radius: var( --radius-medium);

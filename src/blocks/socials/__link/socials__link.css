@@ -1,4 +1,6 @@
 .socials__link {
   text-decoration: none;
   color: inherit;
+  word-break: break-all;
+  
 }

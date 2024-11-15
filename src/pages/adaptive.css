@@ -56,7 +56,7 @@
   }
 
   .card-big .card__button-primary-container {
-    inline-size: auto;
+    width: auto;
   } 
 
   .card-big .card__buttons-container {
@@ -120,26 +120,15 @@
     max-width: 100px;
     min-width: 55px;
   }
-/*
-  .reviews-container {
-    height: 100dvh;
-  }
-*/
 
-  .reviews-container__reviews-list {
-    height: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 475px;
-    grid-auto-flow: row;
-    grid-auto-rows: 475px;
+  .section-reviews__text-content {
+    flex-direction: column;
   }
 
-  
-/*
-  .card-list {
-    grid-template-columns: 1fr;
+  .section-reviews__text-content .section__headline {
+    max-width: none;
   }
-*/
+ 
   .card-big {
     grid-template-columns: 1fr;
     gap: var(--gap-inside-section-small);

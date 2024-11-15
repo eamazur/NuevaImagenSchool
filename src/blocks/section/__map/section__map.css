@@ -1,4 +1,4 @@
 .section__map {
-  inline-size: 50%;
+  width: 50%;
   border-radius: var(--radius-medium);
 }

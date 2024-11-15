@@ -3,12 +3,6 @@
 import avatarReview1 from '../images/IMG_5802.webp';
 import videoReview2 from '../images/IMG_5485.mp4';
 import photoReview3 from '../images/IMG_5802.webp';
-/*
-const link = 'https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-fire-place-PEvIC-L4IeE'
-
-const avatarReview1 = link;
-const videoReview2 = link;
-const photoReview3 = link;*/
 
 const reviewsList = document.querySelector('.reviews-container__reviews-list')
 const forwardButton = document.querySelector('.button-forward');
@@ -77,25 +71,6 @@ const reviews = [
   },
  
 ];
-/*
-//set number of reviews per page based on window width
-function updateReviewsPerPage() {
-  if (window.innerWidth <= 768 && reviewsPerPage != 2) {
-    reviewsPerPage = 2;
-    console.log('reviews per page 2');
-  } else {
-    if (reviewsPerPage !=4) {
-      reviewsPerPage = 4;
-      console.log('reviews per page 4');
-    }
-  }
-  
-  
-}
-
-window.addEventListener("resize", updateReviewsPerPage);
-window.addEventListener("onload", updateReviewsPerPage);
-*/
 
 function calculatePageCount(reviewsArr) {
   pageCount = Math.ceil(reviewsArr.length / reviewsPerPage);

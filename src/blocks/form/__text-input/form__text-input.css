@@ -11,14 +11,13 @@
 }
 
 .form__text-input_message {
-  min-block-size: 80px;
+  min-height: 80px;
 }
 
 .form__text-input_checkbox {
   width: 16px;
   height: 16px;
   margin: 0;
-  /*margin-top: 4px;*/
   accent-color: var(--text-color-accent);
 }
 

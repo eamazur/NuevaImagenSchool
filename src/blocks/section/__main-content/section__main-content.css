@@ -16,5 +16,5 @@
   flex-direction: row;
   gap: var(--gap-inside-section-large);
   justify-content: space-between;
-  max-block-size: 275px;
+  max-height: 275px;
 }

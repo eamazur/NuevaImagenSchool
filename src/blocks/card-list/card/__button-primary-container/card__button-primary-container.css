@@ -6,5 +6,5 @@
 }
 
 .card-small .card__button-primary-container {
-  inline-size: auto;
+  width: auto;
 }

@@ -1,5 +1,5 @@
 .card__buttons-description {
   margin: 0;
-  inline-size: 50%;
+  width: 50%;
   font-size: var(--text-size-small);
 }
