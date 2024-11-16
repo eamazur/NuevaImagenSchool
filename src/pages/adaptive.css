@@ -132,7 +132,6 @@
   .card-big {
     grid-template-columns: 1fr;
     gap: var(--gap-inside-section-small);
-    grid-auto-rows: min-content 1fr;
     grid-column-end: 1;
   }
 
