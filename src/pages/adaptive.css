@@ -129,6 +129,12 @@
     max-width: none;
   }
  
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-inside-section-medium);
+  }
+
   .card-big {
     grid-template-columns: 1fr;
     gap: var(--gap-inside-section-small);
