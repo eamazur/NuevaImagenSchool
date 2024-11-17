@@ -1,6 +1,6 @@
 .card__chip {
   background-color: var(--background-color-page);
-  padding: var(--padding-extra-small);
+  padding: 8px;
   border-radius: var(--radius-small);
   color: var(--text-color-chip);
 }

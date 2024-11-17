@@ -21,16 +21,31 @@
   padding-top: calc(0.6*var(--gap-between-sections)) ;
 }
 
+.section-why-us {
+  padding-inline: 16px;
+}
+
+.section#reviews {
+  padding-inline: 16px;
+}
+
 .section-courses {
   background-color: var(--background-color-light);
   margin-top: var(--gap-between-sections);
+  padding-inline: 16px;
 }
 
 .section-form {
   background-color: var(--background-color-light);
   padding-bottom: var(--gap-between-sections);
+  padding-inline: 16px;
+}
+
+.section-faq {
+  padding-inline: 16px;
 }
 
 .section-contact {
   margin-bottom: var(--gap-between-sections);
+  padding-inline: 16px;
 }

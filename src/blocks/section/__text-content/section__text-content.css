@@ -1,8 +1,12 @@
 .section__text-content {
-  margin-inline: var(--margin-section-side);
+  /*margin-inline: var(--margin-section-side);*/
   display: flex;
   flex-direction: column;
   gap: var(--gap-inside-section-small);
+}
+
+.section-home .section__text-content {
+  padding-inline: 16px;
 }
 
 .section-why-us__text-content {

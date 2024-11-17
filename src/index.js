@@ -4,3 +4,4 @@ import "./components/collapsible.js";
 import "./components/current-year.js";
 import "./components/hide-header.js"
 import "./components/reviews.js"
+import "./components/course-timing.js"

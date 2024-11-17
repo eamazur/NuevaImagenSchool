@@ -12,7 +12,14 @@
   color: var(--text-color-accent);
 }
 
+.footer__nav-container .header__link:hover {
+  background-color: #3F466C;
+  color: #BDC2DD;
+}
+
 .header__link:has(.logo) {
   padding: 0;
 }
+
+
 

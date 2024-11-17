@@ -90,6 +90,9 @@
     display: none;
   }
   
+  .headline_page {
+    line-height: 1.2;
+  }
 
   .video-container {
     aspect-ratio: 2;
@@ -132,7 +135,7 @@
   .card-list {
     display: flex;
     flex-direction: column;
-    gap: var(--gap-inside-section-medium);
+    gap: 16px;
   }
 
   .card-big {

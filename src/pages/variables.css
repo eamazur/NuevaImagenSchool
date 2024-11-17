@@ -26,7 +26,7 @@ html {
   --text-size-large-medium: clamp(1.125rem, 1.0833rem + 0.2083vw, 1.25rem); /*from 18 to 20*/
   --text-size-regular: 16px;                                     /*from 16 to 16*/
   --text-size-small: 13px;                                       /*from 13 to 13*/
-  --text-size-h1: clamp(2.25rem, 1.6667rem + 2.9167vw, 4rem);    /*from 36 to 64*/
+  --text-size-h1: clamp(2rem, 0.9882rem + 3.7647vw, 4rem); /*clamp(2.25rem, 1.6667rem + 2.9167vw, 4rem);*/    /*from 36 to 64*/
   --text-size-h2: clamp(1.75rem, 1.3333rem + 2.0833vw, 3rem);    /*from 28 to 48*/
   --text-size-h3: clamp(1.25rem, 1.1667rem + 0.4167vw, 1.5rem);  /*from 20 to 24*/
   

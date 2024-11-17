@@ -136,7 +136,7 @@
               <li class="section-home__chip">
                 <img
                   class="section-home__chip-image"
-                  src="<%=require('./images/pivot-point-icon.png')%>"
+                  src="<%=require('./images/school-icon.svg')%>"
                   alt="15+"
                 />
                 Pivot Point study principles
@@ -144,7 +144,7 @@
               <li class="section-home__chip">
                 <img
                   class="section-home__chip-image"
-                  src="<%=require('./images/bilingual-icon.svg')%>"
+                  src="<%=require('./images/es-icon.svg')%>"
                   alt=""
                 />
                 Spanish & English
@@ -276,20 +276,26 @@
                 href="https://www.instagram.com"
                 class="socials__link"
                 target="_blank"
-                ><img
-                  class="socials__icon"
-                  src="<%=require('./images/instagram-icon.svg')%>"
-                  alt="instagram link"
-              /></a>
+                ><div class="socials__icon-container">
+                    <img
+                      class="socials__icon  socials__icon-instagram"
+                      src="<%=require('./images/instagram-icon-stroke.svg')%>"
+                      alt="instagram link"
+                    />
+                  </div>
+                </a>
               <a
                 href="https://www.facebook.com"
                 class="socials__link"
                 target="_blank"
-                ><img
-                  class="socials__icon"
-                  src="<%=require('./images/facebook-icon.svg')%>"
-                  alt="facebook link"
-              /></a>
+                ><div class="socials__icon-container">
+                    <img
+                      class="socials__icon socials__icon-facebook"
+                      src="<%=require('./images/facebook-icon-stroke.svg')%>"
+                      alt="facebook link"
+                    />
+                  </div>
+                </a>
               <a class="socials__link" href="">@NuevaImagenBeautySchool</a>
             </div>
           </div>
@@ -326,16 +332,15 @@
               <div class="card__chips-container">
                 <div class="card__chip">7 months</div>
                 <div class="card__chip">1500 hours</div>
-                <div class="card__chip chip-accent">start in December</div>
+                <div class="card__chip chip-accent chip-month"></div>
               </div>
-              <div style="overflow:hidden;">
+              <div class="card__image-container">
                 <img
                 class="card__image card-big__image"
                 src="<%=require('./images/IMG_5863.webp')%>"
                 alt="student during class"
                 />
-              </div>
-              
+              </div>           
               <div class="card__content">
                 <div class="card__title-container">
                   <h3 class="card__title">Cosmetology</h3>
@@ -351,9 +356,13 @@
                   <ul class="card__bullet-list">
                     <li class="card__bullet">Group classes twice a week</li>
                     <li class="card__bullet">90 minutes</li>
-                    <li class="card__bullet">Graduate May 2025</li>
+                    <li class="card__bullet course-end" id="end-cosmetology">Graduate May 2025</li>
                   </ul>
                 </div>
+                <ul class="card__bullet-list">
+                  <li class="card__bullet">40 credits/ 172 days</li>
+                  <li class="card__bullet">Classroom and digital</li>
+                </ul>
                 <div class="card__buttons-container">
                   <div class="card__button-primary-container">
                     <a class="button button-primary" href="#form"
@@ -374,8 +383,9 @@
               <div class="card__chips-container">
                 <div class="card__chip">7 months</div>
                 <div class="card__chip">1500 hours</div>
+                <div class="card__chip chip-month"></div>
               </div>
-              <div style="overflow:hidden;">
+              <div class="card__image-container">
                 <img
                 class="card__image card-small__image"
                 src="<%=require('./images/IMG_5909.webp')%>"
@@ -388,18 +398,22 @@
                   <p class="card__price">$11,300</p>
                 </div>
                 <div class="card__description-container">
-                  <ul class="card__bullet-list">
-                    <li class="card__bullet">40 credits/ 172 days</li>
-                    <li class="card__bullet">Classroom and digital</li>
-                  </ul>
                   <p class="card__description">
-                    Gain essential skills in hair care, styling, color, and
-                    texture services, along with a solid foundation in salon
-                    safety, ethics, and customer service. Graduate ready for the
-                    state licensing exam and entry-level positions in the beauty
-                    industry
+                    Our intensive program teaches essential skills in hair,
+                    nails, skincare, and makeup, along with the business
+                    know-how needed to succeed. Graduate ready to pass the state
+                    exam and become a licenced professional
                   </p>
+                  <ul class="card__bullet-list">
+                    <li class="card__bullet">Group classes twice a week</li>
+                    <li class="card__bullet">90 minutes</li>
+                    <li class="card__bullet course-end" id="end-hairstylist">Graduate May 2025</li>
+                  </ul>
                 </div>
+                <ul class="card__bullet-list">
+                  <li class="card__bullet">40 credits/ 172 days</li>
+                  <li class="card__bullet">Classroom and digital</li>
+                </ul>
                 <div class="card__buttons-container">
                   <a class="button button-primary" href="#form"
                     >Free consultation</a
@@ -415,33 +429,37 @@
               <div class="card__chips-container">
                 <div class="card__chip">7 months</div>
                 <div class="card__chip">1500 hours</div>
+                <div class="card__chip chip-month"></div>
               </div>
-              <div style="overflow:hidden;">
+              <div class="card__image-container">
                 <img
                 class="card__image card-small__image"
                 src="<%=require('./images/IMG_5845.webp')%>"
                 alt="student during class"
                 />
-              </div>
-              
+              </div>             
               <div class="card__content">
                 <div class="card__title-container">
                   <h3 class="card__title">Nail Technician</h3>
                   <p class="card__price">$11,300</p>
                 </div>
                 <div class="card__description-container">
-                  <ul class="card__bullet-list">
-                    <li class="card__bullet">40 credits/ 172 days</li>
-                    <li class="card__bullet">Classroom and digital</li>
-                  </ul>
                   <p class="card__description">
-                    Gain essential skills in hair care, styling, color, and
-                    texture services, along with a solid foundation in salon
-                    safety, ethics, and customer service. Graduate ready for the
-                    state licensing exam and entry-level positions in the beauty
-                    industry
+                    Our intensive program teaches essential skills in hair,
+                    nails, skincare, and makeup, along with the business
+                    know-how needed to succeed. Graduate ready to pass the state
+                    exam and become a licenced professional
                   </p>
+                  <ul class="card__bullet-list">
+                    <li class="card__bullet">Group classes twice a week</li>
+                    <li class="card__bullet">90 minutes</li>
+                    <li class="card__bullet course-end" id="end-nail">Graduate May 2025</li>
+                  </ul>
                 </div>
+                <ul class="card__bullet-list">
+                  <li class="card__bullet">40 credits/ 172 days</li>
+                  <li class="card__bullet">Classroom and digital</li>
+                </ul>
                 <div class="card__buttons-container">
                   <a class="button button-primary" href="#form"
                     >Free consultation</a
@@ -457,8 +475,9 @@
               <div class="card__chips-container">
                 <div class="card__chip">7 months</div>
                 <div class="card__chip">1500 hours</div>
+                <div class="card__chip chip-month"></div>
               </div>
-              <div style="overflow:hidden;">
+              <div class="card__image-container">
                 <img
                 class="card__image card-small__image"
                 src="<%=require('./images/IMG_5864.webp')%>"
@@ -471,18 +490,22 @@
                   <p class="card__price">$11,300</p>
                 </div>
                 <div class="card__description-container">
-                  <ul class="card__bullet-list">
-                    <li class="card__bullet">40 credits/ 172 days</li>
-                    <li class="card__bullet">Classroom and digital</li>
-                  </ul>
                   <p class="card__description">
-                    Gain essential skills in hair care, styling, color, and
-                    texture services, along with a solid foundation in salon
-                    safety, ethics, and customer service. Graduate ready for the
-                    state licensing exam and entry-level positions in the beauty
-                    industry
+                    Our intensive program teaches essential skills in hair,
+                    nails, skincare, and makeup, along with the business
+                    know-how needed to succeed. Graduate ready to pass the state
+                    exam and become a licenced professional
                   </p>
+                  <ul class="card__bullet-list">
+                    <li class="card__bullet">Group classes twice a week</li>
+                    <li class="card__bullet">90 minutes</li>
+                    <li class="card__bullet course-end" id="end-esthetician">Graduate May 2025</li>
+                  </ul>
                 </div>
+                <ul class="card__bullet-list">
+                  <li class="card__bullet">40 credits/ 172 days</li>
+                  <li class="card__bullet">Classroom and digital</li>
+                </ul>
                 <div class="card__buttons-container">
                   <a class="button button-primary" href="#form"
                     >Free consultation</a
@@ -498,33 +521,37 @@
               <div class="card__chips-container">
                 <div class="card__chip">7 months</div>
                 <div class="card__chip">1500 hours</div>
+                <div class="card__chip chip-month"></div>
               </div>
-              <div style="overflow:hidden;">
+              <div class="card__image-container">
                 <img
                 class="card__image card-small__image"
                 src="<%=require('./images/IMG_5481.webp')%>"
                 alt="student during class"
                 />
-              </div>
-              
+              </div>             
               <div class="card__content">
                 <div class="card__title-container">
                   <h3 class="card__title">Barber</h3>
                   <p class="card__price">$14,300</p>
                 </div>
                 <div class="card__description-container">
-                  <ul class="card__bullet-list">
-                    <li class="card__bullet">40 credits/ 172 days</li>
-                    <li class="card__bullet">Classroom and digital</li>
-                  </ul>
                   <p class="card__description">
-                    Gain essential skills in hair care, styling, color, and
-                    texture services, along with a solid foundation in salon
-                    safety, ethics, and customer service. Graduate ready for the
-                    state licensing exam and entry-level positions in the beauty
-                    industry
+                    Our intensive program teaches essential skills in hair,
+                    nails, skincare, and makeup, along with the business
+                    know-how needed to succeed. Graduate ready to pass the state
+                    exam and become a licenced professional
                   </p>
+                  <ul class="card__bullet-list">
+                    <li class="card__bullet">Group classes twice a week</li>
+                    <li class="card__bullet">90 minutes</li>
+                    <li class="card__bullet course-end" id="end-barber">Graduate May 2025</li>
+                  </ul>
                 </div>
+                <ul class="card__bullet-list">
+                  <li class="card__bullet">40 credits/ 172 days</li>
+                  <li class="card__bullet">Classroom and digital</li>
+                </ul>
                 <div class="card__buttons-container">
                   <a class="button button-primary" href="#form"
                     >Free consultation</a
@@ -798,20 +825,26 @@
                   href="https://www.instagram.com"
                   class="socials__link"
                   target="_blank"
-                  ><img
-                    class="socials__icon"
-                    src="<%=require('./images/instagram-icon.svg')%>"
-                    alt="instagram link"
-                /></a>
+                  ><div class="socials__icon-container">
+                    <img
+                      class="socials__icon  socials__icon-instagram"
+                      src="<%=require('./images/instagram-icon-stroke.svg')%>"
+                      alt="instagram link"
+                    />
+                  </div>
+                </a>
                 <a
                   href="https://www.facebook.com"
                   class="socials__link"
                   target="_blank"
-                  ><img
-                    class="socials__icon"
-                    src="<%=require('./images/facebook-icon.svg')%>"
+                  ><div class="socials__icon-container">
+                    <img
+                    class="socials__icon socials__icon-facebook"
+                    src="<%=require('./images/facebook-icon-stroke.svg')%>"
                     alt="facebook link"
-                /></a>
+                    />
+                  </div>
+                </a>
               </div>
             </div>
             <iframe

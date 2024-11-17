@@ -13,6 +13,6 @@
 
 .form__input-container_checkbox {
   flex-direction: row;
-  align-items: top;
+  align-items: center;
   gap: 12px;
 }

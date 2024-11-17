@@ -2,6 +2,8 @@
   font-weight: 500;
   font-size: var(--text-size-h2);
   margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 .headline_page {
@@ -9,16 +11,17 @@
   font-size: var(--text-size-h1);
   margin: 0;
   line-height: 1;
+  letter-spacing: -0.01em;
 }
 
 .section__headline_faq {
-  margin-inline: var(--margin-section-side);
+  /*margin-inline: var(--margin-section-side);*/
 }
 
 .section-contact .section__headline {
-  margin-inline: var(--margin-section-side);
+  /*margin-inline: var(--margin-section-side);*/
 }
 
 .section-courses .section__headline {
-  margin-inline: var(--margin-section-side);
+  /*margin-inline: var(--margin-section-side);*/
 }

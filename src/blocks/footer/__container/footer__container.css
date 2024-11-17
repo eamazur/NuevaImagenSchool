@@ -9,5 +9,5 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: calc(var(--padding-small)*7) var(--padding-small);
+  padding: 80px var(--padding-small) 60px;
 }

@@ -12,6 +12,7 @@
 @import url(./__chips-container/card__chips-container.css);
 @import url(./__chip/card__chip.css);
 @import url(./__spacing-container/card__spacing-container.css);
+@import url(./__image-container/card__image-container.css);
 
 .card-list__card {
   display: grid;

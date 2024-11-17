@@ -4,7 +4,8 @@
   gap: var(--gap-inside-section-medium-small);
   height: min-content;
 }
-
+/*
 .card-small .card__description-container {
   grid-template-columns: auto;
 }
+  */

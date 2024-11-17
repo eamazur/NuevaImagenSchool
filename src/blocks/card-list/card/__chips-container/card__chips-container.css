@@ -6,7 +6,7 @@
   width: 80%;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: var(--gap-inside-section-small);
+  gap: var(--gap-inside-section-extra-small);
 }
 
 .card-small .card__chips-container {

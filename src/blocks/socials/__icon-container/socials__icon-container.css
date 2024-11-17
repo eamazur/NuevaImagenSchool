@@ -1,0 +1,19 @@
+.socials__icon-container {
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-color-primary);
+  border-radius: 50%;
+}
+
+.socials__icon-container:has(.socials__icon-instagram):hover {
+  background-color: transparent;
+  background-image: url(../../../images/instagram-icon-background.svg);
+}
+
+.socials__icon-container:has(.socials__icon-facebook):hover {
+  background-color: #0B84EE;
+}
