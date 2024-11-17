@@ -6,7 +6,7 @@
     width: 100%;
     background-color: var(--background-color-light);
     cursor: pointer;
-    padding: var(--padding-small) var(--padding-large) ;
+    padding: 16px;
     border: none;
     text-align: left;
     border-top-right-radius: var( --radius-medium);

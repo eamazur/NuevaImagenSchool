@@ -103,17 +103,13 @@ const reviews = [
 
 function calculatePageCount(reviewsArr) {
   pageCount = Math.ceil(reviewsArr.length / reviewsPerPage);
-  console.log('calculated pageCount, it is ' + pageCount);
   return pageCount;
 };
 
-function checkPageLimits(pageNumber) {
-  console.log('checking page limits, current page ' + pageNumber + ', page count ' + pageCount);
-  
+function checkPageLimits(pageNumber) {  
   if (pageNumber <= 1) {
     backwardButton.classList.add('inactive');
     currentPageDisplay.classList.add('page-number-inactive');
-    console.log('reached first page');
   } else {
     backwardButton.classList.remove('inactive');
     currentPageDisplay.classList.remove('page-number-inactive');
@@ -121,7 +117,6 @@ function checkPageLimits(pageNumber) {
   if (pageNumber >= pageCount) {
     forwardButton.classList.add('inactive');
     pageCountDisplay.classList.add('page-number-inactive');
-    console.log('reached last page')
   } else {
     forwardButton.classList.remove('inactive');
     pageCountDisplay.classList.remove('page-number-inactive');
@@ -133,7 +128,6 @@ function renderReviewEn(reviewObj) {
   let reviewElement;
   let avatarPresent;
   if (reviewObj.type == 'text') {
-    console.log('type text');
     //fill text review
     reviewElement = reviewTextTemplate.querySelector('.review-text').cloneNode(true);
 
@@ -145,7 +139,6 @@ function renderReviewEn(reviewObj) {
     } else {
       reviewElement.querySelector('.review__avatar').src = reviewObj.avatar;
       avatarPresent = true;
-      console.log('avatar found, ' + avatarPresent);
     }
     reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn;
     reviewElement.querySelector('.review__author-tag').textContent = reviewObj.tag;
@@ -156,7 +149,6 @@ function renderReviewEn(reviewObj) {
   } else {
     //fill photo review
     if (reviewObj.type == 'photo') {
-      console.log('type photo');
       reviewElement = reviewPhotoTemplate.querySelector('.review-photo').cloneNode(true);
       reviewElement.querySelector('.review-photo__image').src = reviewObj.contentEn;
       reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn + ', ' + reviewObj.tag;
@@ -165,7 +157,6 @@ function renderReviewEn(reviewObj) {
       reviewsList.append(reviewElement);
     } else { 
       if (reviewObj.type == 'video') {
-        console.log('type video');
         //fill video review
         reviewElement = reviewVideoTemplate.querySelector('.review-video').cloneNode(true);
         reviewElement.querySelector('.review__video').src = reviewObj.contentEn;
@@ -187,7 +178,6 @@ function renderReviewEs(reviewObj) {
   let reviewElement;
   let avatarPresent;
   if (reviewObj.type == 'text') {
-    console.log('type text');
     //fill text review
     reviewElement = reviewTextTemplate.querySelector('.review-text').cloneNode(true);
 
@@ -199,7 +189,6 @@ function renderReviewEs(reviewObj) {
     } else {
       reviewElement.querySelector('.review__avatar').src = reviewObj.avatar;
       avatarPresent = true;
-      console.log('avatar found, ' + avatarPresent);
     }
     reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEs;
     reviewElement.querySelector('.review__author-tag').textContent = reviewObj.tag;
@@ -210,7 +199,6 @@ function renderReviewEs(reviewObj) {
   } else {
     //fill photo review
     if (reviewObj.type == 'photo') {
-      console.log('type photo');
       reviewElement = reviewPhotoTemplate.querySelector('.review-photo').cloneNode(true);
       reviewElement.querySelector('.review-photo__image').src = reviewObj.contentEs;
       reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEs + ', ' + reviewObj.tag;
@@ -219,7 +207,6 @@ function renderReviewEs(reviewObj) {
       reviewsList.append(reviewElement);
     } else { 
       if (reviewObj.type == 'video') {
-        console.log('type video');
         //fill video review
         reviewElement = reviewVideoTemplate.querySelector('.review-video').cloneNode(true);
         reviewElement.querySelector('.review__video').src = reviewObj.contentEs;
@@ -240,12 +227,10 @@ function removeReviews() {
   const reviews = document.querySelectorAll('.review');
   for (let i = 0; i < reviews.length; i++) {
     reviews[i].remove();
-    console.log('review removed');
   }
 };
 
 function loadReviews(pageNumber) {
-  console.log('entered loadReviews, current page ' + pageNumber);
   currentPageDisplay.textContent = pageNumber;
   checkPageLimits(pageNumber);
 
@@ -254,7 +239,6 @@ function loadReviews(pageNumber) {
   removeReviews();
   
   for (let i= firstReview; i < firstReview + reviewsPerPage; i++) {
-    console.log('loading '+ i +' review');
     if (pageLanguage == 'en') {
       if (reviews[i-1]) {
         //render English content
@@ -272,7 +256,6 @@ function loadReviews(pageNumber) {
 
 document.addEventListener('DOMContentLoaded', function() {
   pageCount = calculatePageCount(reviews);
-  console.log('pageCount ' + pageCount);
   pageCountDisplay.textContent = pageCount;
   loadReviews(currentPage);
 });

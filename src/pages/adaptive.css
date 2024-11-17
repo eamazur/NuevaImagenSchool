@@ -144,12 +144,8 @@
     grid-column-end: 1;
   }
 
-  .card-big .card__description-container {
+  .card__description-container {
     grid-template-columns: auto;
-  }
-
-  .card-big .card__bullet-list {
-    grid-row-start: 1;
   }
 
   .card-big .card__chips-container {
@@ -163,7 +159,6 @@
 
   .form {
     width: 100%;
-    padding: var(--padding-medium) var(--padding-extra-large);
   }
 
   .section-faq__main-content {

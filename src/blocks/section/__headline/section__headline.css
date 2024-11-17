@@ -14,14 +14,14 @@
   letter-spacing: -0.01em;
 }
 
+.section-courses .section__headline {
+  margin-inline: 16px;
+}
+
 .section__headline_faq {
-  /*margin-inline: var(--margin-section-side);*/
+  margin-inline: 16px;
 }
 
 .section-contact .section__headline {
-  /*margin-inline: var(--margin-section-side);*/
-}
-
-.section-courses .section__headline {
-  /*margin-inline: var(--margin-section-side);*/
+  margin-inline: 16px;
 }

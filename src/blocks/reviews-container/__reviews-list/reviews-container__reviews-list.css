@@ -13,7 +13,6 @@
   grid-auto-flow: column;
   overflow: auto;
   padding-bottom: 5px;
-  padding-inline: var(--padding-small);
 }
 
 .reviews-container__reviews-list::-webkit-scrollbar-track

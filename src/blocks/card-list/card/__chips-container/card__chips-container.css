@@ -1,7 +1,7 @@
 .card__chips-container {
   position: absolute;
-  top: var(--gap-inside-section-medium-small);
-  left: var(--gap-inside-section-medium-small);
+  top: 16px/*var(--gap-inside-section-medium-small)*/;
+  left: 16px/*var(--gap-inside-section-medium-small)*/;
   display: flex;
   width: 80%;
   flex-wrap: wrap;
