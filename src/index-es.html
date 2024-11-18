@@ -82,7 +82,7 @@
           </div>
           <a class="button button-primary" href="#form">Free consultation</a>
           <div class="language-select">
-            <a class="button button-language button-language_is-active" href="./index-es.html">
+            <a class="button button-language" href="./index-es.html">
               <img
                 src="<%=require('./images/spain-icon.svg')%>"
                 class="button-language__icon"
@@ -91,7 +91,7 @@
               <span class="button-language__text">Es</span>
             </a>
             <a
-              class="button button-language"
+              class="button button-language button-language_is-active"
               href="./index.html"
             >
               <img
@@ -122,13 +122,8 @@
             </h1>
 
             <ul class="section-home__chips-container">
-              <li class="section-home__chip section-home__chip_no-shift">
-                <img
-                  class="section-home__chip-image section-home__chip-image_no-shift"
-                  src="<%=require('./images/experience-icon.svg')%>"
-                  alt="15+"
-                />
-                years
+              <li class="section-home__chip section-home__chip_no-shift section-home__chip_no-image">
+                <span class="text-accent-font">15+ </span>years
               </li>
               <li class="section-home__chip section-home__chip_no-image">
                 <span class="text-accent-font">300+ </span>employed alumni
@@ -264,8 +259,7 @@
           </div>
         </div>
       </section>
-
-      
+     
       <section class="section"  id="reviews">
         <div class="section__container">
           <div class="section__text-content section-reviews__text-content">
@@ -305,20 +299,20 @@
             </ul>
             
             <div class="reviews-container__pagination">
-                <button class="reviews-container__button button-backward inactive"><img class="reviews-container__button-icon" src="<%=require('./images/shevron.svg')%>" alt=""></button>
+                <button class="reviews-container__button button-backward"><img class="reviews-container__button-icon" src="<%=require('./images/shevron.svg')%>" alt=""></button>
+                <!--
                 <p class="reviews-container__page-display">
                   <span class="reviews-container__page-number page-number-inactive" id="current-page">1</span>
                   /
                   <span class="reviews-container__page-number" id="page-count">3</span>
                 </p>
+              -->
                 <button class="reviews-container__button button-forward"><img class="reviews-container__button-icon" src="<%=require('./images/shevron.svg')%>" alt=""></button>
             </div>
           </div>
         </div>
        
       </section>
-
-
 
       <section class="section section-courses" id="courses">
         <div class="section__container">
@@ -928,5 +922,4 @@
     </template>
 
   </body>
-
 </html>

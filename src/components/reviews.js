@@ -15,12 +15,6 @@ const reviewTextTemplate  = document.querySelector('#review-text-template').cont
 const reviewPhotoTemplate = document.querySelector('#review-photo-template').content;
 const reviewVideoTemplate = document.querySelector('#review-video-template').content;
 
-
-let reviewsPerPage = 4;
-
-let currentPage = 1;
-let pageCount;
-
 /**
  * This is our review "datebase". 
  * Each review has several attributes:
@@ -98,30 +92,7 @@ const reviews = [
     nameEs: 'Maria',
     tag: '@barberannaurora',
   },
- 
 ];
-
-function calculatePageCount(reviewsArr) {
-  pageCount = Math.ceil(reviewsArr.length / reviewsPerPage);
-  return pageCount;
-};
-
-function checkPageLimits(pageNumber) {  
-  if (pageNumber <= 1) {
-    backwardButton.classList.add('inactive');
-    currentPageDisplay.classList.add('page-number-inactive');
-  } else {
-    backwardButton.classList.remove('inactive');
-    currentPageDisplay.classList.remove('page-number-inactive');
-  };
-  if (pageNumber >= pageCount) {
-    forwardButton.classList.add('inactive');
-    pageCountDisplay.classList.add('page-number-inactive');
-  } else {
-    forwardButton.classList.remove('inactive');
-    pageCountDisplay.classList.remove('page-number-inactive');
-  }
-};
 
 function renderReviewEn(reviewObj) {
 
@@ -230,15 +201,10 @@ function removeReviews() {
   }
 };
 
-function loadReviews(pageNumber) {
-  currentPageDisplay.textContent = pageNumber;
-  checkPageLimits(pageNumber);
-
-  let firstReview = (reviewsPerPage * pageNumber) - (reviewsPerPage - 1);
-  
+function loadReviews() {
   removeReviews();
   
-  for (let i= firstReview; i < firstReview + reviewsPerPage; i++) {
+  for (let i= 0; i <= reviews.length; i++) {
     if (pageLanguage == 'en') {
       if (reviews[i-1]) {
         //render English content
@@ -246,7 +212,7 @@ function loadReviews(pageNumber) {
       };
     } else {
       if (reviews[i-1]) {
-        //render Spenish content
+        //render Spanish content
         renderReviewEs(reviews[i-1]);
       };
     }
@@ -255,17 +221,216 @@ function loadReviews(pageNumber) {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-  pageCount = calculatePageCount(reviews);
-  pageCountDisplay.textContent = pageCount;
-  loadReviews(currentPage);
+  loadReviews();
 });
 
+
+let scrollDistance = 300;
+
+forwardButton.addEventListener('click', () => {
+  reviewsList.scrollBy({ left: scrollDistance, behavior: 'smooth' });
+});
+
+backwardButton.addEventListener('click', () => {
+  reviewsList.scrollBy({ left: -scrollDistance, behavior: 'smooth' });
+});
+
+/*
 backwardButton.addEventListener('click', function() {
-  currentPage--;
-  loadReviews(currentPage);
+  reviewsList.scroll({
+    top: 0,
+    left: scrollPosition - scrollStep,
+    behavior: "smooth",
+  });
+  scrollPosition = scrollPosition - scrollStep;
+  updateButtonStates();
 });
 
 forwardButton.addEventListener('click', function() {
-  currentPage++;
-  loadReviews(currentPage);
+  reviewsList.scroll({
+    top: 0,
+    left: scrollPosition + scrollStep,
+    behavior: "smooth",
+  });
+  scrollPosition = scrollPosition + scrollStep;
+  updateButtonStates();
 });
+*/
+
+//In case we go back to pagination
+//delete all below line 101
+// the last piese of old code left should be the reviews array
+
+// let reviewsPerPage = 4;
+
+// let currentPage = 1;
+// let pageCount;
+
+// function calculatePageCount(reviewsArr) {
+//   pageCount = Math.ceil(reviewsArr.length / reviewsPerPage);
+//   return pageCount;
+// };
+
+// function checkPageLimits(pageNumber) {  
+//   if (pageNumber <= 1) {
+//     backwardButton.classList.add('inactive');
+//     currentPageDisplay.classList.add('page-number-inactive');
+//   } else {
+//     backwardButton.classList.remove('inactive');
+//     currentPageDisplay.classList.remove('page-number-inactive');
+//   };
+//   if (pageNumber >= pageCount) {
+//     forwardButton.classList.add('inactive');
+//     pageCountDisplay.classList.add('page-number-inactive');
+//   } else {
+//     forwardButton.classList.remove('inactive');
+//     pageCountDisplay.classList.remove('page-number-inactive');
+//   }
+// };
+
+// function renderReviewEn(reviewObj) {
+
+//   let reviewElement;
+//   let avatarPresent;
+//   if (reviewObj.type == 'text') {
+//     //fill text review
+//     reviewElement = reviewTextTemplate.querySelector('.review-text').cloneNode(true);
+
+//     reviewElement.querySelector('.review__text-content').textContent = reviewObj.contentEn;
+    
+//     if(!reviewObj.avatar) {
+//       avatarPresent = false;
+//       reviewElement.querySelector('.review__avatar').classList.add('avatar-hidden');
+//     } else {
+//       reviewElement.querySelector('.review__avatar').src = reviewObj.avatar;
+//       avatarPresent = true;
+//     }
+//     reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn;
+//     reviewElement.querySelector('.review__author-tag').textContent = reviewObj.tag;
+
+//     //render review
+//     reviewsList.append(reviewElement);
+
+//   } else {
+//     //fill photo review
+//     if (reviewObj.type == 'photo') {
+//       reviewElement = reviewPhotoTemplate.querySelector('.review-photo').cloneNode(true);
+//       reviewElement.querySelector('.review-photo__image').src = reviewObj.contentEn;
+//       reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn + ', ' + reviewObj.tag;
+
+//       //render review
+//       reviewsList.append(reviewElement);
+//     } else { 
+//       if (reviewObj.type == 'video') {
+//         //fill video review
+//         reviewElement = reviewVideoTemplate.querySelector('.review-video').cloneNode(true);
+//         reviewElement.querySelector('.review__video').src = reviewObj.contentEn;
+//         reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn + ', ' + reviewObj.tag;
+
+//         //render review
+//         reviewsList.append(reviewElement);
+//       } else {
+//         console.log('review undefined, will not render');
+//       }
+//     }
+    
+//   }
+  
+// };
+
+// function renderReviewEs(reviewObj) {
+
+//   let reviewElement;
+//   let avatarPresent;
+//   if (reviewObj.type == 'text') {
+//     //fill text review
+//     reviewElement = reviewTextTemplate.querySelector('.review-text').cloneNode(true);
+
+//     reviewElement.querySelector('.review__text-content').textContent = reviewObj.contentEs;
+    
+//     if(!reviewObj.avatar) {
+//       avatarPresent = false;
+//       reviewElement.querySelector('.review__avatar').classList.add('avatar-hidden');
+//     } else {
+//       reviewElement.querySelector('.review__avatar').src = reviewObj.avatar;
+//       avatarPresent = true;
+//     }
+//     reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEs;
+//     reviewElement.querySelector('.review__author-tag').textContent = reviewObj.tag;
+
+//     //render review
+//     reviewsList.append(reviewElement);
+
+//   } else {
+//     //fill photo review
+//     if (reviewObj.type == 'photo') {
+//       reviewElement = reviewPhotoTemplate.querySelector('.review-photo').cloneNode(true);
+//       reviewElement.querySelector('.review-photo__image').src = reviewObj.contentEs;
+//       reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEs + ', ' + reviewObj.tag;
+
+//       //render review
+//       reviewsList.append(reviewElement);
+//     } else { 
+//       if (reviewObj.type == 'video') {
+//         //fill video review
+//         reviewElement = reviewVideoTemplate.querySelector('.review-video').cloneNode(true);
+//         reviewElement.querySelector('.review__video').src = reviewObj.contentEs;
+//         reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEs + ', ' + reviewObj.tag;
+
+//         //render review
+//         reviewsList.append(reviewElement);
+//       } else {
+//         console.log('review undefined, will not render');
+//       }
+//     }
+    
+//   }
+  
+// };
+
+// function removeReviews() {
+//   const reviews = document.querySelectorAll('.review');
+//   for (let i = 0; i < reviews.length; i++) {
+//     reviews[i].remove();
+//   }
+// };
+
+// function loadReviews(pageNumber) {
+//   currentPageDisplay.textContent = pageNumber;
+//   checkPageLimits(pageNumber);
+
+//   let firstReview = (reviewsPerPage * pageNumber) - (reviewsPerPage - 1);
+  
+//   removeReviews();
+  
+//   for (let i= firstReview; i < firstReview + reviewsPerPage; i++) {
+//     if (pageLanguage == 'en') {
+//       if (reviews[i-1]) {
+//         //render English content
+//         renderReviewEn(reviews[i-1]);
+//       };
+//     } else {
+//       if (reviews[i-1]) {
+//         //render Spanish content
+//         renderReviewEs(reviews[i-1]);
+//       };
+//     }
+    
+//   };
+// };
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   pageCount = calculatePageCount(reviews);
+//   pageCountDisplay.textContent = pageCount;
+//   loadReviews(currentPage);
+// });
+
+// backwardButton.addEventListener('click', function() {
+//   currentPage--;
+//   loadReviews(currentPage);
+// });
+
+// forwardButton.addEventListener('click', function() {
+//   currentPage++;
+//   loadReviews(currentPage);
+// });

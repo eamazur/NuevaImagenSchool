@@ -50,11 +50,6 @@
     display: none;
   }
 
-  .card-big .button-primary {
-    font-size: inherit;
-    
-  }
-
   .card-big .card__button-primary-container {
     width: auto;
   } 
@@ -82,6 +77,12 @@
     --line-height-page: 1.2;
   }
 
+  .button {
+    font-size: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+
   .logo {
     height: 45px; 
   }
@@ -102,11 +103,14 @@
     flex-direction: column;
   }
 
+  .section__button-container {
+    flex-direction: column;
+    align-items: end;
+  }
+
   .reasons-container {
     flex-direction: column;
   }
-
-  /*TODO the following rule does not work in dev mode*/
 
   .reasons-container_reverse {
     flex-direction: column-reverse;
@@ -161,6 +165,11 @@
     justify-content: end;
   }
 
+  .card-big .card__button-primary-container {
+    width: 100%;
+    justify-content: end;
+  }
+
   .section-form .section__container {
     flex-direction: column;
     gap: calc(var(--gap-inside-section-medium)*2);
@@ -168,6 +177,11 @@
 
   .form {
     width: 100%;
+  }
+
+  .form__input-container_submit {
+    flex-direction: column;
+    align-items: start;
   }
 
   .section-faq__main-content {
@@ -179,7 +193,7 @@
   }
 
   .section-faq__aside {
-    padding: var(--padding-small) var(--padding-large);
+    padding: var(--padding-small) 16px;
   }
 
   .section-contact__main-content {
