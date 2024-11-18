@@ -182,10 +182,6 @@
     padding: var(--padding-small) var(--padding-large);
   }
 
-  .faq-container__text {
-    padding-top: var(--padding-small);
-  }
-
   .section-contact__main-content {
     flex-direction: column;
     max-height: none;

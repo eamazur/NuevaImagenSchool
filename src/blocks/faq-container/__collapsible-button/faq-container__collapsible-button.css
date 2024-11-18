@@ -6,7 +6,6 @@
     width: 100%;
     background-color: var(--background-color-light);
     cursor: pointer;
-    padding: 16px;
     border: none;
     text-align: left;
     border-top-right-radius: var( --radius-medium);
@@ -14,6 +13,7 @@
     border-bottom-right-radius: var( --radius-medium);
     border-bottom-left-radius: var( --radius-medium);
     font-weight: 600;
+    padding: 16px;
     color: inherit;
     transition: border-radius 0.2s;
     transition-timing-function: step-end;
