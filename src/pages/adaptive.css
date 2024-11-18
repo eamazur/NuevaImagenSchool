@@ -131,7 +131,12 @@
   .section-reviews__text-content .section__headline {
     max-width: none;
   }
- 
+
+  .reviews-container__reviews-list::-webkit-scrollbar
+  {
+    display: none;
+  }
+
   .card-list {
     display: flex;
     flex-direction: column;
@@ -144,12 +149,16 @@
     grid-column-end: 1;
   }
 
-  .card__description-container {
-    grid-template-columns: auto;
+  .card__description {
+    grid-column-end: span 2;
   }
 
   .card-big .card__chips-container {
     width: 80%;
+  }
+
+  .card-big .card__buttons-container {
+    justify-content: end;
   }
 
   .section-form .section__container {
