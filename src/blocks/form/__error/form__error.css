@@ -1,0 +1,9 @@
+.form__error {
+  color: var(--text-color-accent);
+  font-size: var(--text-size-small);
+  display: none;
+}
+
+.form__error-visible {
+  display: block;
+}

@@ -10,6 +10,7 @@ html {
   --button-color-primary-hover: #0D1127;
   --button-color-secondary: #E3E3E3;
   --button-color-secondary-hover: #CDCDCD;
+  --button-color-disabled: #B3B3B3;
   --background-color-light: #F7F9FB;
   --background-color-input: #F5F8FA;
   --background-color-page: white;

@@ -199,8 +199,7 @@
                   than competitors
                 </h3>
                 <p class="reasons-container__text">
-                  We aim to make education З community, which is why we keep our
-                  prices at a minimum
+                  We want to make education accessible to as many members of our community as possible
                 </p>
               </li>
               <li class="reasons-container__reason">
@@ -574,7 +573,8 @@
               answer all of your questions
             </p>
           </div>
-          <form class="form" action="" id="form">
+          <form class="form" action="https://submit-form.com/HgmT9617Q" id="form">
+            <input type="hidden" name="_feedback.success.message" value="We will contact you as soon as possible! You can go back to our website:" />
             <div class="form__input-container">
               <label for="name" class="form__label">Name</label>
               <input
@@ -596,10 +596,12 @@
                 name="tel"
                 placeholder="+1 900 000 00 00"
                 autocomplete="tel"
-                minlength="9"
-                maxlength="15"
+                
+                pattern="^\+\d{1,3}\s\d{3}\s\d{3}\s\d{2}\s\d{2}$"
                 required
               />
+              <p class="form__error">Please enter the phone in this format:</p>
+              <p class="form__error">+1 900 000 00 00</p>
             </div>
             <div class="form__input-container">
               <label for="text" class="form__label">Message</label>
@@ -611,14 +613,15 @@
               ></textarea>
             </div>
             <div class="form__input-container form__input-container_submit">
-              <button class="button button-primary button-form">Submit</button>
+              <button class="button button-primary button-form" type="submit" id="submit-button">Submit</button>
               <div class="form__input-container form__input-container_checkbox">
                 <input
                   type="checkbox"
                   class="form__text-input form__text-input_checkbox"
-                  name=""
+                  name="privacy-agreement"
                   id="checkbox"
                   checked
+                  required
                 />
                 <span class="form__text-input_checkbox-description"
                   >I agree with terms of
@@ -774,7 +777,7 @@
                     alt=""
                   />
                   <a
-                    class="contacts-container__text"
+                    class="contacts-container__text link"
                     href="https://maps.app.goo.gl/x145imjrkZxAyahu6"
                     target="_blank"
                     >15210 e. 6th ave, unit 3 aurora co, 80011
@@ -786,7 +789,7 @@
                     src="<%=require('./images/phone-icon.svg')%>"
                     alt=""
                   />
-                  <a class="contacts-container__text" href="tel:+17203730955"
+                  <a class="contacts-container__text link" href="tel:+17203730955"
                     >720 373-0955</a
                   >
                 </div>
@@ -807,7 +810,7 @@
                     alt=""
                   />
                   <a
-                    class="contacts-container__text"
+                    class="contacts-container__text link"
                     href="mailto:lauraesanchez@ymail.com"
                     target="_blank"
                     >lauraesanchez@ymail.com</a
@@ -843,7 +846,11 @@
             </div>
             <iframe
               class="section__map"
-              src="https://www.google.com/maps/d/u/0/embed?mid=1AdS1s5nccahsSeOg8Mdi-zXLYNnmr_I&ehbc=2E312F&noprof=1"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCiQnMnhSFwAV6rlMIgNar34DE1u_ypD_8
+                  &q=place_id:ChIJ9WtCXABjbIcR_ljteLCXyFI">
             ></iframe>
           </div>
         </div>
@@ -904,7 +911,7 @@
     <template id="review-video-template">
       <li class="review review-video">
         <div class="review__video-container">
-          <video class="review__video" src="" controls></video>
+          <video class="review__video" src=""  controls></video>
         </div>
         <div class="review__caption">
           <p class="review__author-name"></p>

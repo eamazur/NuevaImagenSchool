@@ -1,8 +1,16 @@
 //import all images for reviews here for Webpack to insert correct file paths to dist
 
 import avatarReview1 from '../images/IMG_5802.webp';
-import videoReview2 from '../images/IMG_5485.mp4';
 import photoReview3 from '../images/IMG_5802.webp';
+import videoReview1 from '../images/review-video-1.mp4';
+import videoReview2 from '../images/review-video-2.mp4';
+import videoReview3 from '../images/review-video-3.mp4';
+import videoReview4 from '../images/review-video-4.mp4';
+import videoReview5 from '../images/review-video-5.mp4';
+import videoReview6 from '../images/review-video-6.mp4';
+import videoReview7 from '../images/review-video-7.mp4';
+import videoReview7en from '../images/review-video-7-subs-en.mp4';
+import videoReview7es from '../images/review-video-7-subs.mp4';
 
 const reviewsList = document.querySelector('.reviews-container__reviews-list')
 const forwardButton = document.querySelector('.button-forward');
@@ -33,35 +41,11 @@ const reviewVideoTemplate = document.querySelector('#review-video-template').con
  * */
 
 const reviews = [
+  //this is from videoReview1
   {
     type: 'text',
-    contentEn: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
-    contentEs: 'test spanish review',
-    avatar: avatarReview1,
-    nameEn: 'Gabriel, barber',
-    nameEs: 'Gabriel, barber',
-    tag: '@barbergabrielaurora',
-  },
-  {
-    type: 'video',
-    contentEn: videoReview2,
-    contentEs: videoReview2,
-    nameEn: 'Anna',
-    nameEs: 'Maria',
-    tag: '@barberannaurora',
-  },
-  {
-    type: 'photo',
-    contentEn: photoReview3,
-    contentEs: photoReview3,
-    nameEn: 'Anna',
-    nameEs: 'Maria',
-    tag: '@barberannaurora',
-  },
-  {
-    type: 'text',
-    contentEn: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
-    contentEs: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
+    contentEn: '"Attending Escuela Nueva Imagen was a game changer for me. The training, the practice, the instructors"',
+    contentEs: '"Asistir a Escuela Nueva Imagen fue un cambio de juego para mí. La capacitación, la práctica, los instructores"',
     avatar: undefined,
     nameEn: 'Gabriel, barber',
     nameEs: 'Gabriel, barber',
@@ -75,19 +59,69 @@ const reviews = [
     nameEs: 'Maria',
     tag: '@barberannaurora',
   },
+  //this is from videoReview7
   {
     type: 'text',
-    contentEn: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
-    contentEs: '“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”“We aim to make education accessible to the Spanish-speaking community, which is why we keep our prices at a minimum”',
-    avatar: avatarReview1,
+    contentEn: '"Today I am proud to have attended Escuela Nueva Imagen. It was a life-changing experience, an educational one. I am very grateful for the support I received"',
+    contentEs: '"Hoy estoy orgullosa de haber asistido a Escuela Nueva Imagen. Fue un cambio de vida, de educación. Estoy muy agradecida por el apoyo que se me brindó"',
+    avatar: undefined,
     nameEn: 'Gabriel, barber',
     nameEs: 'Gabriel, barber',
     tag: '@barbergabrielaurora',
   },
   {
     type: 'video',
+    contentEn: videoReview5,
+    contentEs: videoReview5,
+    nameEn: 'Anna',
+    nameEs: 'Maria',
+    tag: '@barberannaurora',
+  },
+  {
+    type: 'video',
+    contentEn: videoReview1,
+    contentEs: videoReview1,
+    nameEn: 'Anna',
+    nameEs: 'Maria',
+    tag: '@barberannaurora',
+  },
+  {
+    type: 'video',
     contentEn: videoReview2,
     contentEs: videoReview2,
+    nameEn: 'Anna',
+    nameEs: 'Maria',
+    tag: '@barberannaurora',
+  },
+  {
+    type: 'video',
+    contentEn: videoReview3,
+    contentEs: videoReview3,
+    nameEn: 'Anna',
+    nameEs: 'Maria',
+    tag: '@barberannaurora',
+  },
+  {
+    type: 'video',
+    contentEn: videoReview4,
+    contentEs: videoReview4,
+    nameEn: 'Anna',
+    nameEs: 'Maria',
+    tag: '@barberannaurora',
+  },
+  
+  {
+    type: 'video',
+    contentEn: videoReview6,
+    contentEs: videoReview6,
+    nameEn: 'Anna',
+    nameEs: 'Maria',
+    tag: '@barberannaurora',
+  },
+  {
+    type: 'video',
+    contentEn: videoReview7en,
+    contentEs: videoReview7es,
     nameEn: 'Anna',
     nameEs: 'Maria',
     tag: '@barberannaurora',
@@ -234,28 +268,6 @@ forwardButton.addEventListener('click', () => {
 backwardButton.addEventListener('click', () => {
   reviewsList.scrollBy({ left: -scrollDistance, behavior: 'smooth' });
 });
-
-/*
-backwardButton.addEventListener('click', function() {
-  reviewsList.scroll({
-    top: 0,
-    left: scrollPosition - scrollStep,
-    behavior: "smooth",
-  });
-  scrollPosition = scrollPosition - scrollStep;
-  updateButtonStates();
-});
-
-forwardButton.addEventListener('click', function() {
-  reviewsList.scroll({
-    top: 0,
-    left: scrollPosition + scrollStep,
-    behavior: "smooth",
-  });
-  scrollPosition = scrollPosition + scrollStep;
-  updateButtonStates();
-});
-*/
 
 //In case we go back to pagination
 //delete all below line 101
