@@ -156,7 +156,7 @@ function renderReviewEn(reviewObj) {
     if (reviewObj.type == 'photo') {
       reviewElement = reviewPhotoTemplate.querySelector('.review-photo').cloneNode(true);
       reviewElement.querySelector('.review-photo__image').src = reviewObj.contentEn;
-      reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn + ', ' + reviewObj.tag;
+      //reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn + ', ' + reviewObj.tag;
 
       //render review
       reviewsList.append(reviewElement);
@@ -165,7 +165,7 @@ function renderReviewEn(reviewObj) {
         //fill video review
         reviewElement = reviewVideoTemplate.querySelector('.review-video').cloneNode(true);
         reviewElement.querySelector('.review__video').src = reviewObj.contentEn;
-        reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn + ', ' + reviewObj.tag;
+        //reviewElement.querySelector('.review__author-name').textContent = reviewObj.nameEn + ', ' + reviewObj.tag;
 
         //render review
         reviewsList.append(reviewElement);
