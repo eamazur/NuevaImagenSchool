@@ -83,6 +83,30 @@
   }
 }
 
+@media (width <= 1190px) {
+  .header-es .header__submenu {
+    min-width: auto;
+    width: auto;
+    gap: var(--gap-inside-section-small);
+  }
+
+  .header-es .header__nav-container {
+    width: auto;
+  }
+  .header-es .button-phone {
+    display: block;
+  }
+
+  .header-es .header__phone,
+  .header-es .header__time {
+    display: none;
+  }
+
+  .header-es .header__submenu > .button-primary {
+    display: none;
+  }
+}
+
 @media (width <= 1024px) {
   html {
     --line-height-page: 1.3;

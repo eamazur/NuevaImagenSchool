@@ -3,8 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     'January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'
   ];
+  let monthsEs = [
+    'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+    'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
+  ];
 
   const chips = document.querySelectorAll('.chip-month');
+  const pageLanguage = document.documentElement.lang;
   
   const professions = [
     {
@@ -78,11 +83,18 @@ document.addEventListener('DOMContentLoaded', function() {
   let startMonth = currentDate.getMonth() + 1;
   
   let startMonthName = months[startMonth];
+  let startMonthNameEs = monthsEs[startMonth];
   
   function getEndDate(currentDate, duration) {
     let today = new Date();
     let endDate = new Date(today.setDate(today.getDate() + duration));
-    return 'Graduate ' + months[endDate.getMonth()] + ' ' + endDate.getFullYear();
+    if (pageLanguage == 'en') {
+      //render English content
+      return ' ' + months[endDate.getMonth()] + ' ' + endDate.getFullYear();
+    } else {
+      //render Spanish content
+      return ' ' + monthsEs[endDate.getMonth()] + ' ' + endDate.getFullYear();
+    }
   }
 
   function getCreditsAndDuration(profession) {
@@ -90,14 +102,33 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   professions.forEach(item => {
-    item.endElement.textContent = getEndDate(currentDate, item.duration);
-    item.creditsElement.textContent = item.credits + ' credits / ' + item.duration + ' days';
+    item.endElement.textContent = item.endElement.textContent + getEndDate(currentDate, item.duration);
+    
+    if (pageLanguage == 'en') {
+      //render English content
+      item.creditsElement.textContent = item.credits + ' credits / ' + item.duration + ' days';
+    } else {
+      //render Spanish content
+      item.creditsElement.textContent = item.credits + ' créditos / ' + item.duration + ' días';
+    }
     item.priceElement.textContent = '$' + item.price.toLocaleString();
-    item.monthsElement.textContent = item.months + ' months';
-    item.hoursElement.textContent = item.hours + ' hours'
+    item.monthsElement.textContent = item.months + ' ' + item.monthsElement.textContent;
+    item.hoursElement.textContent = item.hours + ' ' + item.hoursElement.textContent;
   });
 
   chips.forEach(item => {
     item.textContent = 'start in ' + startMonthName;
   });
+
+  if (pageLanguage == 'en') {
+    //render English content
+    chips.forEach(item => {
+      item.textContent = 'start in ' + startMonthName;
+    });
+  } else {
+    //render Spanish content
+    chips.forEach(item => {
+      item.textContent = 'start in ' + startMonthNameEs;
+    });
+  }
 })
