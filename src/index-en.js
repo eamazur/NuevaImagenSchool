@@ -6,4 +6,3 @@ import "./components/hide-header.js";
 import "./components/reviews.js";
 import "./components/course-info.js";
 import "./components/form-validation.js";
-import "./components/map.js";

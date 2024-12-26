@@ -24,7 +24,7 @@ html{--text-color-main:#292c3f;--text-color-accent:#ff5151;--text-color-dark-bg:
 .section__text{font-size:var(--text-size-large);line-height:1.2;margin:0}.section-faq__text{font-size:var(--text-size-regular)}
 .section__button-container{display:flex;flex-direction:row;gap:var(--gap-inside-section-small)}
 .section__map{border:none;border-radius:var(--radius-medium);width:50%}
-.section-faq__aside{align-items:start;display:flex;flex-direction:column;gap:12px}
+.section-faq__aside{align-items:start;display:flex;flex-direction:column;gap:12px;min-width:250px}
 .section-faq__subheadline{font-size:var(--text-size-regular);font-weight:600}
 .section__container{display:flex;flex-direction:column;gap:var(--gap-inside-section-medium);margin:auto;max-width:1280px;padding-inline:var(--page-side-margin)}.section-form .section__container{flex-direction:row}.section-contact .section__container,.section-faq .section__container,.section-form .section__container{gap:calc(var(--gap-inside-section-medium)*2)}.section-contact .section__container{width:100%}
 .section{margin:auto;padding-top:var(--gap-between-sections);width:100%}.section-home{padding-top:calc(var(--gap-between-sections)*.6)}.section-courses{margin-top:var(--gap-between-sections)}.section-courses,.section-form{background-color:var(--background-color-light)}.section-form{padding-bottom:var(--gap-between-sections)}.section-contact{margin-bottom:var(--gap-between-sections)}

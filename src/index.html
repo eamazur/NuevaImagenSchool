@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -35,35 +35,35 @@
   </head>
 
   <body class="page">
-    <div class="header__container nav-down">
+    <div class="header__container header-es nav-down">
       <header class="header">
         <a href="#top" class="header__link"
           ><img
             src="<%=require('./images/logo.svg')%>"
             class="logo"
-            alt="Nueva Imagen Beauty School logo"
+            alt="Logotipo de Nueva Imagen Beauty School"
         /></a>
         <nav class="header__nav-container">
           <ul class="header__navigation">
             <li class="header__heading">
-              <a href="#why-us" class="header__link">Why Us</a>
+              <a href="#why-us" class="header__link">Por qué elegirnos</a>
             </li>
             <li class="header__heading">
-              <a href="#reviews" class="header__link">Reviews</a>
+              <a href="#reviews" class="header__link">Opiniones</a>
             </li>
             <li class="header__heading">
-              <a href="#courses" class="header__link">Courses</a>
+              <a href="#courses" class="header__link">Cursos</a>
             </li>
             <!--
-        <li  class="header__heading">
-          <a href="#community" class="header__link">Community</a>
-        </li>
-        -->
+            <li class="header__heading">
+              <a href="#community" class="header__link">Comunidad</a>
+            </li>
+            -->
             <li class="header__heading">
               <a href="#faq" class="header__link">FAQ</a>
             </li>
             <li class="header__heading">
-              <a href="#contacts" class="header__link">Contact Us</a>
+              <a href="#contacts" class="header__link">Contáctenos</a>
             </li>
           </ul>
         </nav>
@@ -78,26 +78,23 @@
                 alt=""
             /></a>
             <a href="tel:+17203730955" class="header__phone">720 373-0955</a>
-            <p class="header__time">9:00 AM - 2:00 PM</p>
+            <p class="header__time">10:00 AM - 6:00 PM</p>
           </div>
-          <a class="button button-primary" href="#form">Free consultation</a>
+          <a class="button button-primary" href="#form">Consulta gratuita</a>
           <div class="language-select">
-            <a class="button button-language" href="./index-es.html">
+            <a class="button button-language button-language_is-active" href="./index.html">
               <img
                 src="<%=require('./images/spain-icon.svg')%>"
                 class="button-language__icon"
-                alt="Flag of Spain"
+                alt="Bandera de España"
               />
               <span class="button-language__text">Es</span>
             </a>
-            <a
-              class="button button-language button-language_is-active"
-              href="./index.html"
-            >
+            <a class="button button-language" href="./index-en.html">
               <img
                 src="<%=require('./images/us-icon.svg')%>"
                 class="button-language__icon"
-                alt="Flag of the USA"
+                alt="Bandera de los Estados Unidos"
               />
               <span class="button-language__text">En</span>
             </a>
@@ -105,28 +102,28 @@
         </div>
       </header>
     </div>
-
+    
     <main>
       <section class="section section-home" id="home">
         <div class="section__container">
           <div class="section__text-content">
             <h1 class="section__headline headline_page">
-              Start Your Career in the Beauty Industry with
+              Comienza tu carrera en la industria de la belleza con
               <span class="text-accent-font text-accent-color"
-                >Bilingual Education</span
+                >Educación Bilingüe</span
               >
-              &
+              y
               <span class="text-accent-font text-accent-color"
-                >Hands-On Training</span
+                >Entrenamiento Práctico</span
               >
             </h1>
-
+      
             <ul class="section-home__chips-container">
               <li class="section-home__chip section-home__chip_no-shift section-home__chip_no-image">
-                <span class="text-accent-font">15+ </span>years  of Expertise
+                <span class="text-accent-font">40+ </span>años de experiencia
               </li>
               <li class="section-home__chip section-home__chip_no-image">
-                <span class="text-accent-font">76+ </span>Successful Graduates
+                <span class="text-accent-font">126+ </span>graduados exitosos
               </li>
               <li class="section-home__chip">
                 <img
@@ -134,7 +131,7 @@
                   src="<%=require('./images/school-icon.svg')%>"
                   alt="15+"
                 />
-                Based on Pivot Point Principles
+                Basado en los principios de Pivot Point & Miledy
               </li>
               <li class="section-home__chip">
                 <img
@@ -142,11 +139,11 @@
                   src="<%=require('./images/es-icon.svg')%>"
                   alt=""
                 />
-                Spanish & English Education
+                Educación en Español e Inglés
               </li>
             </ul>
           </div>
-
+      
           <div class="video-container">
             <video
               src="<%=require('./images/IMG_5955.mp4')%>"
@@ -158,404 +155,349 @@
           </div>
         </div>
       </section>
+      
 
       <section class="section section-why-us" id="why-us">
         <div class="section__container">
           <div class="section__text-content section-why-us__text-content">
             <h2 class="section__headline">
-              Supporting You on Your
+              Apoyándote en tu
               <span class="text-accent-font text-accent-color"
-                >Journey to Success</span
+                >Camino al Éxito</span
               >
             </h2>
             <div class="section-why-us__main-content">
               <p class="section__text">
-                Helping the Spanish-speaking community build rewarding, high-paying careers in Colorado's beauty industry for over 15 years.
+                Ayudando a la comunidad hispanohablante a construir carreras
+                gratificantes y bien remuneradas en la industria de la belleza de
+                Colorado por más de 25 años.
               </p>
               <div class="section__button-container">
                 <a class="button button-primary" href="#form"
-                  >Free consultation</a
+                  >Consulta gratuita</a
                 >
                 <a class="button button-tertiary" href="#courses">
-                  Choose your course
+                  Elige tu curso
                   <img
                     src="<%=require('./images/arrow-icon.svg')%>"
-                    alt="arrow down"
+                    alt="flecha hacia abajo"
                   />
                 </a>
               </div>
             </div>
           </div>
-
+      
           <div class="reasons-container">
             <ul class="reasons-container__list">
               <li
                 class="reasons-container__reason reasons-container__reason_odd"
               >
                 <h3 class="reasons-container__title">
-                  Our
-                  <span class="text-accent-color">Prices are 30% lower</span>
-                  Than Competitors
+                  Nuestros
+                  <span class="text-accent-color">Precios son un 30% más bajos</span>
+                  Que los de la Competencia
                 </h3>
                 <p class="reasons-container__text">
-                  Our mission is to make professional education affordable and accessible to as many people in our community as possible.
+                  Nuestra misión es hacer que la educación profesional sea asequible y accesible para tantas personas como sea posible en nuestra comunidad.
                 </p>
               </li>
               <li class="reasons-container__reason">
                 <h3 class="reasons-container__title">
-                  We Provide
-                  <span class="text-accent-color">Bilingual Education</span>
+                  Ofrecemos
+                  <span class="text-accent-color">Educación Bilingüe</span>
                 </h3>
                 <p class="reasons-container__text">
-                  We strive to create a comfortable learning environment for Spanish speakers. Recently, we secured the option for students to take final exams in Spanish right here in Colorado.
+                  Nos esforzamos por crear un ambiente de aprendizaje cómodo para los hispanohablantes. Recientemente, hemos asegurado la opción de que los estudiantes realicen los exámenes finales en español aquí mismo en Colorado.
                 </p>
                 <img
                   class="reasons-container__icon"
                   src="<%=require('./images/bilingual-icon.svg')%>"
-                  alt="two flags"
+                  alt="dos banderas"
                 />
               </li>
             </ul>
             <img
               class="reasons-container__image"
               src="<%=require('./images/IMG_5855.webp')%>"
-              alt="Photo of a female student during class"
+              alt="Foto de una estudiante durante una clase"
             />
           </div>
-
+      
           <div class="reasons-container reasons-container_reverse">
             <img
               class="reasons-container__image"
               src="<%=require('./images/IMG_5630.webp')%>"
-              alt="Photo of students during a lecture"
+              alt="Foto de estudiantes durante una conferencia"
             />
             <ul class="reasons-container__list">
               <li
                 class="reasons-container__reason reasons-container__reason_odd"
               >
                 <h3 class="reasons-container__title">
-                  <span class="text-accent-color">70%</span> of Our Education is
-                  <span class="text-accent-color">Hands-On Practice</span>
+                  <span class="text-accent-color">70%</span> de Nuestra Educación es
+                  <span class="text-accent-color">Práctica</span>
                 </h3>
                 <p class="reasons-container__text">
-                  Gain confidence through hands-on training—starting with professional mannequins and progressing to real clients.
+                  Gana confianza con entrenamiento práctico, comenzando con maniquíes profesionales y avanzando a clientes reales.
                 </p>
               </li>
               <li class="reasons-container__reason">
                 <h3 class="reasons-container__title">
-                  Personal Training by Laura Sanchez
+                  Entrenamiento Personalizado por Laura Sánchez
                 </h3>
                 <p class="reasons-container__text">
-                  Benefit from direct, hands-on instruction by Laura Sanchez herself, ensuring you learn from the best.
+                  Aprovecha la instrucción directa y personalizada de Laura Sánchez, asegurándote de aprender de la mejor.
                 </p>
               </li>
             </ul>
           </div>
         </div>
       </section>
+      
      
-      <section class="section"  id="reviews">
+      <section class="section" id="reviews">
         <div class="section__container">
           <div class="section__text-content section-reviews__text-content">
-            <h2 class="section__headline">Discover Why <span class="text-accent-font text-accent-color">People Like You</span> <span class="text-accent-font text-accent-color">Choose Us</span></h2>
-          
-            <div class="socials">
+            <h2 class="section__headline">
+              Descubre Por Qué <span class="text-accent-font text-accent-color">Personas Como Tú</span>
+              <span class="text-accent-font text-accent-color">Nos Eligen</span>
+            </h2>
+      
+            <!-- <div class="socials">
               <a
                 href="https://www.instagram.com"
                 class="socials__link"
                 target="_blank"
-                ><div class="socials__icon-container">
-                    <img
-                      class="socials__icon  socials__icon-instagram"
-                      src="<%=require('./images/instagram-icon-stroke.svg')%>"
-                      alt="instagram link"
-                    />
-                  </div>
-                </a>
+              >
+                <div class="socials__icon-container">
+                  <img
+                    class="socials__icon socials__icon-instagram"
+                    src="<%=require('./images/instagram-icon-stroke.svg')%>"
+                    alt="enlace a Instagram"
+                  />
+                </div>
+              </a>
               <a
                 href="https://www.facebook.com"
                 class="socials__link"
                 target="_blank"
-                ><div class="socials__icon-container">
-                    <img
-                      class="socials__icon socials__icon-facebook"
-                      src="<%=require('./images/facebook-icon-stroke.svg')%>"
-                      alt="facebook link"
-                    />
-                  </div>
-                </a>
+              >
+                <div class="socials__icon-container">
+                  <img
+                    class="socials__icon socials__icon-facebook"
+                    src="<%=require('./images/facebook-icon-stroke.svg')%>"
+                    alt="enlace a Facebook"
+                  />
+                </div>
+              </a>
               <a class="socials__link" href="">@NuevaImagenBeautySchool</a>
-            </div>
+            </div> -->
           </div>
-  
+      
           <div class="reviews-container">
             <ul class="reviews-container__reviews-list">
             </ul>
-            
+      
             <div class="reviews-container__pagination">
-                <button class="reviews-container__button button-backward"><img class="reviews-container__button-icon" src="<%=require('./images/shevron.svg')%>" alt=""></button>
-                <!--
-                <p class="reviews-container__page-display">
-                  <span class="reviews-container__page-number page-number-inactive" id="current-page">1</span>
-                  /
-                  <span class="reviews-container__page-number" id="page-count">3</span>
-                </p>
+              <button class="reviews-container__button button-backward">
+                <img
+                  class="reviews-container__button-icon"
+                  src="<%=require('./images/shevron.svg')%>"
+                  alt=""
+                />
+              </button>
+              <!--
+              <p class="reviews-container__page-display">
+                <span class="reviews-container__page-number page-number-inactive" id="current-page">1</span>
+                /
+                <span class="reviews-container__page-number" id="page-count">3</span>
+              </p>
               -->
-                <button class="reviews-container__button button-forward"><img class="reviews-container__button-icon" src="<%=require('./images/shevron.svg')%>" alt=""></button>
+              <button class="reviews-container__button button-forward">
+                <img
+                  class="reviews-container__button-icon"
+                  src="<%=require('./images/shevron.svg')%>"
+                  alt=""
+                />
+              </button>
             </div>
           </div>
         </div>
-       
       </section>
+      
 
       <section class="section section-courses" id="courses">
         <div class="section__container">
           <h2 class="section__headline">
-            Choose Your
-            <span class="text-accent-font text-accent-color">Career Path</span>
+            Elige tu
+            <span class="text-accent-font text-accent-color">Camino Profesional</span>
           </h2>
+          
 
           <div class="card-list">
             <div class="card-list__card card card-big">
-              <div class="card__chips-container">
-                <div class="card__chip" id="months-cosmetology">months</div>
-                <div class="card__chip" id="hours-cosmetology">hours</div>
-                <div class="card__chip chip-accent chip-month"></div>
-              </div>
               <div class="card__image-container">
                 <img
-                class="card__image card-big__image"
-                src="<%=require('./images/IMG_5863.webp')%>"
-                alt="student during class"
+                  class="card__image card-big__image"
+                  src="<%=require('./images/IMG_5863.webp')%>"
+                  alt="estudiante durante la clase"
                 />
-              </div>           
+              </div>
               <div class="card__content">
                 <div class="card__title-container">
-                  <h3 class="card__title">Cosmetology</h3>
+                  <h3 class="card__title">Cosmetología</h3>
                   <p class="card__price" id="price-cosmetology"></p>
                 </div>
                 <div class="card__description-container">
                   <p class="card__description">
-                    Our comprehensive Cosmetology program equips you with essential skills in hair, nails, skincare, and makeup, along with the business acumen needed to thrive in the beauty industry. Graduate fully prepared to pass the state exam and launch your career as a licensed professional.
+                    Nuestro completo programa de Cosmetología te equipa con habilidades esenciales en cabello, uñas, cuidado de la piel y maquillaje, además de conocimientos empresariales necesarios para triunfar en la industria de la belleza.
                   </p>
                   <ul class="card__bullet-list">
-                    <li class="card__bullet">Group classes twice a week</li>
-                    <li class="card__bullet">Each session is 90 minutes</li>
-                    <li class="card__bullet course-end" id="end-cosmetology">Graduate</li>
-                  </ul>
-                  <ul class="card__bullet-list">
                     <li class="card__bullet" id="credits-cosmetology"></li>
-                    <li class="card__bullet">Classroom and digital learning</li>
+                    <li class="card__bullet">Aprendizaje en aula y digital</li>
                   </ul>
                 </div>
                 <div class="card__buttons-container">
-                  <div class="card__button-primary-container">
-                    <a class="button button-primary" href="#form"
-                      >Free consultation</a
-                    >
-                    <p class="card__buttons-description">
-                      Discover all the details about our programs during a free consultation.
-                    </p>
-                  </div>
-                  <!--
-              <button class="button button-secondary">Learn More</button>
-              -->
+                  <a class="button button-primary" href="#form">Consulta gratuita</a>
                 </div>
               </div>
             </div>
-
+            
             <div class="card-list__card card card-small">
-              <div class="card__chips-container">
-                <div class="card__chip" id="months-hairstylist">months</div>
-                <div class="card__chip" id="hours-hairstylist">hours</div>
-                <div class="card__chip chip-month"></div>
-              </div>
               <div class="card__image-container">
                 <img
-                class="card__image card-small__image"
-                src="<%=require('./images/IMG_5909.webp')%>"
-                alt="student during class"
-              />
+                  class="card__image card-small__image"
+                  src="<%=require('./images/IMG_5909.webp')%>"
+                  alt="estudiante durante la clase"
+                />
               </div>
               <div class="card__content">
                 <div class="card__title-container">
-                  <h3 class="card__title">Hairstylist</h3>
+                  <h3 class="card__title">Estilista</h3>
                   <p class="card__price" id="price-hairstylist"></p>
                 </div>
                 <div class="card__description-container">
                   <p class="card__description">
-                    Specialize in the art of hairstyling with our focused program. Learn advanced techniques in cutting, coloring, and styling to become a sought-after hairstylist. Graduate ready to pass the state exam and start your exciting career.
+                    Especialízate en el arte de la peluquería con nuestro programa enfocado. Aprende técnicas avanzadas de corte, coloración y peinado para convertirte en un estilista muy solicitado.
                   </p>
                   <ul class="card__bullet-list">
-                    <li class="card__bullet">Group classes twice a week</li>
-                    <li class="card__bullet">Each session is 90 minutes</li>
-                    <li class="card__bullet course-end" id="end-hairstylist">Graduate</li>
-                  </ul>
-                  <ul class="card__bullet-list">
                     <li class="card__bullet" id="credits-hairstylist"></li>
-                    <li class="card__bullet">Classroom and digital learning</li>
+                    <li class="card__bullet">Aprendizaje en aula y digital</li>
                   </ul>
                 </div>
                 <div class="card__buttons-container">
-                  <a class="button button-primary" href="#form"
-                    >Free consultation</a
-                  >
-                  <!--
-              <button class="button button-secondary">Learn More</button>
-              -->
+                  <a class="button button-primary" href="#form">Consulta gratuita</a>
                 </div>
               </div>
             </div>
-
+          
             <div class="card-list__card card card-small">
-              <div class="card__chips-container">
-                <div class="card__chip" id="months-nail">months</div>
-                <div class="card__chip" id="hours-nail">hours</div>
-                <div class="card__chip chip-month"></div>
-              </div>
               <div class="card__image-container">
                 <img
-                class="card__image card-small__image"
-                src="<%=require('./images/IMG_5845.webp')%>"
-                alt="student during class"
+                  class="card__image card-small__image"
+                  src="<%=require('./images/IMG_5845.webp')%>"
+                  alt="estudiante durante la clase"
                 />
-              </div>             
+              </div>
               <div class="card__content">
                 <div class="card__title-container">
-                  <h3 class="card__title">Nail Technician</h3>
+                  <h3 class="card__title">Técnico en Uñas</h3>
                   <p class="card__price" id="price-nail"></p>
                 </div>
                 <div class="card__description-container">
                   <p class="card__description">
-                    Master the craft of nail care and design in our Nail Technician program. Learn the latest techniques in manicures, pedicures, and nail art. Graduate prepared to pass the state exam and start your career as a licensed professional.
+                    Domina el arte del cuidado y diseño de uñas en nuestro programa de Técnico en Uñas. Aprende las técnicas más recientes en manicuras, pedicuras y arte de uñas.
                   </p>
                   <ul class="card__bullet-list">
-                    <li class="card__bullet">Group classes twice a week</li>
-                    <li class="card__bullet">Each session is 90 minutes</li>
-                    <li class="card__bullet course-end" id="end-nail">Graduate</li>
-                  </ul>
-                  <ul class="card__bullet-list">
                     <li class="card__bullet" id="credits-nail"></li>
-                    <li class="card__bullet">Classroom and digital learning</li>
+                    <li class="card__bullet">Aprendizaje en aula y digital</li>
                   </ul>
                 </div>
                 <div class="card__buttons-container">
-                  <a class="button button-primary" href="#form"
-                    >Free consultation</a
-                  >
-                  <!--
-              <button class="button button-secondary">Learn More</button>
-              -->
+                  <a class="button button-primary" href="#form">Consulta gratuita</a>
                 </div>
               </div>
             </div>
-
+          
             <div class="card-list__card card card-small">
-              <div class="card__chips-container">
-                <div class="card__chip" id="months-esthetician">months</div>
-                <div class="card__chip" id="hours-esthetician">hours</div>
-                <div class="card__chip chip-month"></div>
-              </div>
               <div class="card__image-container">
                 <img
-                class="card__image card-small__image"
-                src="<%=require('./images/IMG_5864.webp')%>"
-                alt="student during class"
-              />
+                  class="card__image card-small__image"
+                  src="<%=require('./images/IMG_5864.webp')%>"
+                  alt="estudiante durante la clase"
+                />
               </div>
               <div class="card__content">
                 <div class="card__title-container">
-                  <h3 class="card__title">Esthetician</h3>
+                  <h3 class="card__title">Esteticista</h3>
                   <p class="card__price" id="price-esthetician"></p>
                 </div>
                 <div class="card__description-container">
                   <p class="card__description">
-                    Dive deep into skincare with our Esthetician program. Learn advanced facial treatments, skin analysis, and spa therapies. Graduate ready to pass the state exam and embark on a rewarding career as a licensed esthetician.
+                    Adéntrate en el cuidado de la piel con nuestro programa de Esteticista. Aprende tratamientos faciales avanzados, análisis de la piel y terapias de spa.
                   </p>
                   <ul class="card__bullet-list">
-                    <li class="card__bullet">Group classes twice a week</li>
-                    <li class="card__bullet">Each session is 90 minutes</li>
-                    <li class="card__bullet course-end" id="end-esthetician">Graduate</li>
-                  </ul>
-                  <ul class="card__bullet-list">
                     <li class="card__bullet" id="credits-esthetician"></li>
-                    <li class="card__bullet">Classroom and digital learning</li>
+                    <li class="card__bullet">Aprendizaje en aula y digital</li>
                   </ul>
                 </div>
                 <div class="card__buttons-container">
-                  <a class="button button-primary" href="#form"
-                    >Free consultation</a
-                  >
-                  <!--
-              <button class="button button-secondary">Learn More</button>
-              -->
+                  <a class="button button-primary" href="#form">Consulta gratuita</a>
                 </div>
               </div>
             </div>
-
+            
             <div class="card-list__card card card-small">
-              <div class="card__chips-container">
-                <div class="card__chip" id="months-barber">months</div>
-                <div class="card__chip" id="hours-barber">hours</div>
-                <div class="card__chip chip-month"></div>
-              </div>
               <div class="card__image-container">
                 <img
-                class="card__image card-small__image"
-                src="<%=require('./images/IMG_5481.webp')%>"
-                alt="student during class"
+                  class="card__image card-small__image"
+                  src="<%=require('./images/IMG_5481.webp')%>"
+                  alt="estudiante durante la clase"
                 />
-              </div>             
+              </div>
               <div class="card__content">
                 <div class="card__title-container">
-                  <h3 class="card__title">Barber</h3>
+                  <h3 class="card__title">Barbero</h3>
                   <p class="card__price" id="price-barber"></p>
                 </div>
                 <div class="card__description-container">
                   <p class="card__description">
-                    Join our Barber program to learn classic and modern barbering techniques, including haircuts, shaves, and grooming. Graduate prepared to pass the state exam and start your career as a professional barber.
+                    Únete a nuestro programa de Barbero para aprender técnicas clásicas y modernas de barbería, incluyendo cortes de cabello, afeitados y cuidados personales.
                   </p>
                   <ul class="card__bullet-list">
-                    <li class="card__bullet">Group classes twice a week</li>
-                    <li class="card__bullet">Each session is 90 minutes</li>
-                    <li class="card__bullet course-end" id="end-barber">Graduate</li>
-                  </ul>
-                  <ul class="card__bullet-list">
                     <li class="card__bullet" id="credits-barber"></li>
-                    <li class="card__bullet">Classroom and digital learning</li>
+                    <li class="card__bullet">Aprendizaje en aula y digital</li>
                   </ul>
                 </div>
                 <div class="card__buttons-container">
-                  <a class="button button-primary" href="#form"
-                    >Free consultation</a
-                  >
-                  <!--
-              <button class="button button-secondary">Learn More</button>
-              -->
+                  <a class="button button-primary" href="#form">Consulta gratuita</a>
                 </div>
               </div>
             </div>
+            
           </div>
+          
         </div>
       </section>
+
 
       <section class="section section-form" id="section-form">
         <div class="section__container">
           <div class="section__text-content section-form__text-content">
             <h2 class="section__headline">
-              Schedule Your
+              Programa tu
               <span class="text-accent-font text-accent-color"
-                >Free Consultation</span
+                >Consulta Gratuita</span
               >
             </h2>
             <p class="section__text">
-              Our specialists are here to help you choose the perfect course and answer all your questions.
+              Nuestros especialistas están aquí para ayudarte a elegir el curso perfecto y responder a todas tus preguntas.
             </p>
           </div>
           <form class="form" action="https://submit-form.com/HgmT9617Q" id="form">
-            <input type="hidden" name="_feedback.success.message" value="We will contact you as soon as possible! You can go back to our website:" />
+            <input type="hidden" name="_feedback.success.message" value="¡Nos pondremos en contacto contigo lo antes posible! Puedes volver a nuestro sitio web:" />
             <div class="form__input-container">
-              <label for="name" class="form__label">Name</label>
+              <label for="name" class="form__label">Nombre</label>
               <input
                 type="text"
                 class="form__text-input"
@@ -567,7 +509,7 @@
               />
             </div>
             <div class="form__input-container">
-              <label for="tel" class="form__label">Phone Number</label>
+              <label for="tel" class="form__label">Número de Teléfono</label>
               <input
                 type="tel"
                 class="form__text-input"
@@ -575,24 +517,23 @@
                 name="tel"
                 placeholder="+1 900 000 00 00"
                 autocomplete="tel"
-                
                 pattern="^\+\d{1,3}\s\d{3}\s\d{3}\s\d{2}\s\d{2}$"
                 required
               />
-              <p class="form__error">Please enter the phone in this format:</p>
+              <p class="form__error">Por favor, introduce el teléfono en este formato:</p>
               <p class="form__error">+1 123 456 78 90</p>
             </div>
             <div class="form__input-container">
-              <label for="text" class="form__label">Message</label>
+              <label for="text" class="form__label">Mensaje</label>
               <textarea
                 class="form__text-input form__text-input_message"
                 id="text"
                 name="text"
-                placeholder="What course would you prefer to choose"
+                placeholder="¿Qué curso prefieres elegir?"
               ></textarea>
             </div>
             <div class="form__input-container form__input-container_submit">
-              <button class="button button-primary button-form" type="submit" id="submit-button">Submit</button>
+              <button class="button button-primary button-form" type="submit" id="submit-button">Enviar</button>
               <div class="form__input-container form__input-container_checkbox">
                 <input
                   type="checkbox"
@@ -602,32 +543,31 @@
                   checked
                   required
                 />
-                <span class="form__text-input_checkbox-description"
-                  >I agree to the terms of the
+                <span class="form__text-input_checkbox-description">
+                  Estoy de acuerdo con los términos de la
                   <a
                     href=""
                     class="form__text-input_checkbox-link"
                     target="_blank"
-                    >Privacy Policy</a
-                  ></span
-                >
+                    >Política de Privacidad</a>
+                </span>
               </div>
             </div>
           </form>
         </div>
       </section>
-
+      
       <section class="section section-faq" id="faq">
         <div class="section__container">
           <h2 class="section__headline section__headline_faq">
-            Frequently Asked
-            <span class="text-accent-font text-accent-color">Questions</span>
+            Preguntas
+            <span class="text-accent-font text-accent-color">Frecuentes</span>
           </h2>
           <div class="section-faq__main-content">
             <div class="faq-container">
               <div class="faq-container__question">
                 <button type="button" class="faq-container__collapsible-button">
-                  What payment options are available?
+                  ¿Qué opciones de pago están disponibles?
                   <img
                     class="faq-container__collapsible-button-icon"
                     src="<%=require('./images/shevron.svg')%>"
@@ -636,14 +576,14 @@
                 </button>
                 <div class="faq-container__content">
                   <p class="faq-container__text">
-                    We offer flexible payment plans, including installment options and financial aid for those who qualify. Contact us to discuss the best payment option for you.
+                    Ofrecemos un plan de pagos conveniente diseñado para hacer tu educación más accesible. Para comenzar, pagas el 25% del costo total del curso por adelantado. El saldo restante se divide en pagos mensuales iguales según la duración de tu curso. Para los programas de Técnico en Uñas y Esteticista, los pagos se distribuyen en tres meses. El programa de Estilista se divide en siete meses, mientras que los programas de Cosmetología y Barbero se distribuyen en nueve meses. Este enfoque flexible asegura que puedas concentrarte en tus estudios mientras manejas los pagos fácilmente.
                   </p>
                 </div>
               </div>
-
+      
               <div class="faq-container__question">
                 <button type="button" class="faq-container__collapsible-button">
-                  Is it possible to get a refund?
+                  ¿Es posible obtener un reembolso?
                   <img
                     class="faq-container__collapsible-button-icon"
                     src="<%=require('./images/shevron.svg')%>"
@@ -652,14 +592,14 @@
                 </button>
                 <div class="faq-container__content">
                   <p class="faq-container__text">
-                    Yes, we have a refund policy in place. If you need to withdraw, please refer to our refund policy or contact our admissions office for details.
+                    Los reembolsos están disponibles según el momento en que un estudiante se retire o sea dado de baja. Si el retiro ocurre dentro del primer 10% del programa, se reembolsa el 90% de la matrícula, disminuyendo a 75%, 50% o 25% a medida que se completa más del programa. No se realizan reembolsos después de completar el 75% del programa. Los reembolsos se procesan dentro de los 30 días posteriores a la fecha oficial de baja, y se emite un reembolso completo si la escuela cancela el programa y no puede completarse.
                   </p>
                 </div>
               </div>
-
+      
               <div class="faq-container__question">
                 <button type="button" class="faq-container__collapsible-button">
-                  Who will my instructors be?
+                  ¿Quiénes serán mis instructores?
                   <img
                     class="faq-container__collapsible-button-icon"
                     src="<%=require('./images/shevron.svg')%>"
@@ -668,14 +608,14 @@
                 </button>
                 <div class="faq-container__content">
                   <p class="faq-container__text">
-                    Our instructors are experienced professionals with years of industry expertise. You'll learn from the best in the field, including personalized instruction from our founder, Laura Sanchez.
+                    Tu formación será supervisada y dirigida personalmente por Laura Sánchez, garantizando una experiencia de aprendizaje de alta calidad y profesional.
                   </p>
                 </div>
               </div>
-
+      
               <div class="faq-container__question">
                 <button type="button" class="faq-container__collapsible-button">
-                  Do you offer placement assistance?
+                  ¿De qué trata la consulta gratuita?
                   <img
                     class="faq-container__collapsible-button-icon"
                     src="<%=require('./images/shevron.svg')%>"
@@ -684,14 +624,14 @@
                 </button>
                 <div class="faq-container__content">
                   <p class="faq-container__text">
-                    Absolutely! We provide career services to help you find employment after graduation, including resume building, interview preparation, and job placement assistance.
+                    Nuestra consulta gratuita es una oportunidad para discutir tus metas profesionales, explorar nuestros programas y encontrar el que mejor se adapte a ti. Responderemos a todas tus preguntas y te guiaremos durante el proceso de inscripción.
                   </p>
                 </div>
               </div>
-
+      
               <div class="faq-container__question">
                 <button type="button" class="faq-container__collapsible-button">
-                  What is the free consultation about?
+                  ¿Cómo es el proceso de inscripción?
                   <img
                     class="faq-container__collapsible-button-icon"
                     src="<%=require('./images/shevron.svg')%>"
@@ -700,45 +640,28 @@
                 </button>
                 <div class="faq-container__content">
                   <p class="faq-container__text">
-                    Our free consultation is an opportunity to discuss your career goals, explore our programs, and find the best fit for you. We'll answer any questions you have and guide you through the enrollment process.
-                  </p>
-                </div>
-              </div>
-
-              <div class="faq-container__question">
-                <button type="button" class="faq-container__collapsible-button">
-                  What is the process like to enroll?
-                  <img
-                    class="faq-container__collapsible-button-icon"
-                    src="<%=require('./images/shevron.svg')%>"
-                    alt=""
-                  />
-                </button>
-                <div class="faq-container__content">
-                  <p class="faq-container__text">
-                    Enrollment is simple! After your free consultation, we'll assist you with the application, discuss payment options, and schedule your classes to get you started on your new career path.
+                    ¡Inscribirse es sencillo! Después de tu consulta gratuita, te ayudaremos con la aplicación, discutiremos las opciones de pago y programaremos tus clases para que comiences tu nuevo camino profesional.
                   </p>
                 </div>
               </div>
             </div>
-
+      
             <div class="section-faq__aside">
-              <h3 class="section-faq__subheadline">Still Have Questions?</h3>
+              <h3 class="section-faq__subheadline">¿Aún tienes preguntas?</h3>
               <p class="section-faq__text">
-                We're here to answer all your questions during a free consultation.
+                Estamos aquí para responder a todas tus preguntas durante una consulta gratuita.
               </p>
-              <a class="button button-primary" href="#form"
-                >Free consultation</a
-              >
+              <a class="button button-primary" href="#form">Consulta gratuita</a>
             </div>
           </div>
         </div>
       </section>
+      
 
       <section class="section section-contact" id="contacts">
         <div class="section__container">
           <h2 class="section__headline">
-            <span class="text-accent-font text-accent-color">Get in Touch</span> With Us
+            <span class="text-accent-font text-accent-color">Contáctanos</span>
           </h2>
           <div class="section-contact__main-content">
             <div class="section__text-content section-contact__text-content">
@@ -753,7 +676,7 @@
                     class="contacts-container__text link"
                     href="https://maps.app.goo.gl/x145imjrkZxAyahu6"
                     target="_blank"
-                    >15210 E. 6th Ave, Unit 3, Aurora, CO 80011
+                    >15210 E. 6th Ave, Unidad 3, Aurora, CO 80011
                   </a>
                 </div>
                 <div class="contacts-container__bullet">
@@ -763,7 +686,17 @@
                     alt=""
                   />
                   <a class="contacts-container__text link" href="tel:+17203730955"
-                    >(720) 373-0955</a
+                    >Oficina: (720) 373-0955</a
+                  >
+                </div>
+                <div class="contacts-container__bullet">
+                  <img
+                    class="contacts-container__icon"
+                    src="<%=require('./images/phone-icon.svg')%>"
+                    alt=""
+                  />
+                  <a class="contacts-container__text link" href="tel:+17202669711"
+                    >Celular: (720) 266-9711</a
                   >
                 </div>
                 <div class="contacts-container__bullet">
@@ -773,7 +706,7 @@
                     alt=""
                   />
                   <p class="contacts-container__text">
-                    Open Mon - Fri from 9:00 AM to 2:00 PM
+                    Abierto de lunes a viernes de 10:00 AM a 6:00 PM
                   </p>
                 </div>
                 <div class="contacts-container__bullet">
@@ -784,22 +717,23 @@
                   />
                   <a
                     class="contacts-container__text link"
-                    href="mailto:lauraesanchez@ymail.com"
+                    href="mailto:nuevaimagenbeautyschool@outlook.com"
                     target="_blank"
-                    >lauraesanchez@ymail.com</a
+                    >nuevaimagenbeautyschool@outlook.com</a
                   >
                 </div>
               </div>
-              <div class="socials">
+              <!-- <div class="socials">
                 <a
                   href="https://www.instagram.com"
                   class="socials__link"
                   target="_blank"
-                  ><div class="socials__icon-container">
+                >
+                  <div class="socials__icon-container">
                     <img
-                      class="socials__icon  socials__icon-instagram"
+                      class="socials__icon socials__icon-instagram"
                       src="<%=require('./images/instagram-icon-stroke.svg')%>"
-                      alt="instagram link"
+                      alt="enlace a Instagram"
                     />
                   </div>
                 </a>
@@ -807,63 +741,82 @@
                   href="https://www.facebook.com"
                   class="socials__link"
                   target="_blank"
-                  ><div class="socials__icon-container">
+                >
+                  <div class="socials__icon-container">
                     <img
-                    class="socials__icon socials__icon-facebook"
-                    src="<%=require('./images/facebook-icon-stroke.svg')%>"
-                    alt="facebook link"
+                      class="socials__icon socials__icon-facebook"
+                      src="<%=require('./images/facebook-icon-stroke.svg')%>"
+                      alt="enlace a Facebook"
                     />
                   </div>
                 </a>
-              </div>
+              </div> -->
             </div>
-            <div id="map" class="footer__map google-map section__map">
-              <iframe
-              class=""
-              loading="lazy"
-              allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12569241.143274825!2d-124.32407075!3d39.72476940000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c63005c426bf5%3A0x52c897b078ed58fe!2sNueva%20Imagen%20Beauty%20School!5e0!3m2!1sen!2sus!4v1732550862848!5m2!1sen!2sus">
-              </iframe>
-            <!--
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCiQnMnhSFwAV6rlMIgNar34DE1u_ypD_8&q=place_id:ChIJ9WtCXABjbIcR_ljteLCXyFI">
--->
-            </div>
+            <div id="map" class="footer__map google-map section__map"></div>
+      
+            <!-- Conexión a Google Maps API -->
+            <script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiQnMnhSFwAV6rlMIgNar34DE1u_ypD_8&libraries=maps"
+              async
+              defer
+            ></script>
             
+            <!-- JavaScript para inicializar el mapa -->
+            <script>
+              let map;
+            
+              function initMap() {
+                map = new google.maps.Map(document.getElementById("map"), {
+                  center: { lat: 39.724737049268725, lng: -104.8122987507314 },
+                  zoom: 17,
+                  disableDefaultUI: true,
+                  mapId: "5ee6d11d725f82cf", // Sustituir por tu Map ID
+                });
+              }
+            
+              // Asegúrate de que el mapa se cargue después de cargar la API
+              window.addEventListener("load", () => {
+                if (google && google.maps) {
+                  initMap();
+                }
+              });
+            </script>
           </div>
         </div>
       </section>
+      
     </main>
 
     <footer class="footer">
       <div class="footer__container">
-        <a href="#top" class="header__link"
-          ><img
+        <a href="#top" class="header__link">
+          <img
             src="<%=require('./images/logo-white.svg')%>"
             class="logo"
-            alt="Nueva Imagen Beauty School logo"
-        /></a>
+            alt="Logotipo de Nueva Imagen Beauty School"
+          />
+        </a>
         <nav class="footer__nav-container">
           <ul class="header__navigation">
             <li class="header__heading">
-              <a href="#why-us" class="header__link">Why Choose Us</a>
+              <a href="#why-us" class="header__link">¿Por qué elegirnos?</a>
             </li>
             <li class="header__heading">
-              <a href="#reviews" class="header__link">Reviews</a>
+              <a href="#reviews" class="header__link">Opiniones</a>
             </li>
             <li class="header__heading">
-              <a href="#courses" class="header__link">Courses</a>
+              <a href="#courses" class="header__link">Cursos</a>
             </li>
             <!--
-        <li  class="header__heading">
-          <a href="#form" class="header__link">Community</a>
-        </li>
-        -->
             <li class="header__heading">
-              <a href="#faq" class="header__link">FAQ</a>
+              <a href="#form" class="header__link">Comunidad</a>
+            </li>
+            -->
+            <li class="header__heading">
+              <a href="#faq" class="header__link">Preguntas Frecuentes</a>
             </li>
             <li class="header__heading">
-              <a href="#contacts" class="header__link">Contact Us</a>
+              <a href="#contacts" class="header__link">Contáctanos</a>
             </li>
           </ul>
         </nav>
@@ -872,6 +825,7 @@
         </p>
       </div>
     </footer>
+    
 
     <template id="review-text-template">
       <li class="review review-text">
@@ -905,7 +859,6 @@
         </div>
       </li>
     </template>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqd_Fo7slGbBGeqIYkEKtOmmO3Ucp3LiI&callback=initMap"></script>
   </body>
 
 </html>
