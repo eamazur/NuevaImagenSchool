@@ -70,11 +70,6 @@ const reviews = [
     contentEs: videoReview2,
   },
   {
-    type: 'text',
-    contentEn: '"Today I am proud to have attended Escuela Nueva Imagen. It was a life-changing experience, an educational one. I am very grateful for the support I received"',
-    contentEs: '"Hoy estoy orgullosa de haber asistido a Escuela Nueva Imagen. Fue un cambio de vida, de educación. Estoy muy agradecida por el apoyo que se me brindó"',
-  },
-  {
     type: 'video',
     contentEn: videoReview3,
     contentEs: videoReview3,
@@ -83,17 +78,7 @@ const reviews = [
     type: 'video',
     contentEn: videoReview4,
     contentEs: videoReview4,
-  },
-  {
-    type: 'video',
-    contentEn: videoReview6,
-    contentEs: videoReview6,
-  },
-  {
-    type: 'video',
-    contentEn: videoReview7en,
-    contentEs: videoReview7es,
-  },
+  }
 ];
 
 function renderReviewEn(reviewObj) {

@@ -5,6 +5,12 @@
   gap: var(--gap-inside-section-small);
 }
 
+.section-news .section__text-content {
+  padding: var(--padding-small);
+  text-align: center;
+  font-size: var(--text-size-large-medium);
+}
+
 .section-why-us__text-content {
   flex-direction: row;
   gap: var(--gap-inside-section-large);

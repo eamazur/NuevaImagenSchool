@@ -17,6 +17,10 @@
   padding-top: var(--gap-between-sections);
 }
 
+.section-news {
+  padding-top: 0;
+}
+
 .section-home {
   padding-top: calc(0.6*var(--gap-between-sections)) ;
 }

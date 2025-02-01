@@ -11,6 +11,12 @@
   background-color: var(--background-color-light);
 }
 */
+
+.section-news .section__container {
+  background-color: var(--background-color-light);
+  border-radius: var(--radius-medium);
+}
+
 .section-form .section__container {
   /*background-color: var(--background-color-light);*/
   flex-direction: row;

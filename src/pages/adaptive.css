@@ -17,6 +17,11 @@
 }
 
 @media (width <= 1280px) {
+  
+  .section-news .section__container {
+    border-radius: 0;
+  }
+
   .video-container {
     border-radius: 0;
   }
